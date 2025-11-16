@@ -14,7 +14,7 @@ export default function Hero() {
   ];
 
   return (
-    <section className="relative min-h-screen flex flex-col md:flex-row items-center justify-between px-10 pt-24 bg-gradient-to-b from-[#ced8f3] to-[#1c48a8] overflow-hidden">
+    <section className="relative min-h-screen flex flex-col md:flex-row items-center justify-between px-10 pt-24 bg-gradient-to-b from-[#cdd4e7] to-[#1c48a8] overflow-hidden">
      
 
 
