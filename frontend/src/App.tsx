@@ -1,20 +1,20 @@
-import { useState } from 'react'
+
 import { Download } from 'lucide-react';
 import './App.css'
 import Navbar from './components/Navbar.tsx'
 import Hero from './components/Hero.tsx'
 import { Pointer } from './components/ui/pointer.tsx'
 import About from './components/About.tsx'
-
+import  Experience  from './components/Experience.tsx'
 function App() {
   return (
-    <>
+    <div className='bg-[#0d1117]'>
       
       <Navbar />
       <Hero />
       <About />
-
-
+      < Experience />
+      
       <div className="fixed bottom-9 right-9 ">
          <a href="/Saurabh Shisode Resume.pdf" download className="block">
         <div className="relative w-24 h-24 rounded-full  ">
@@ -42,18 +42,7 @@ function App() {
         </a>
       </div>
 
-
-
-
-
-
-
-
-
-
-
-
-    </>
+    </div>
   )
 }
 

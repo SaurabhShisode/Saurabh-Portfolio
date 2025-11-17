@@ -90,7 +90,7 @@ export default function Hero() {
         </motion.div>
 
         <div className="flex-shrink-0 mr-10">
-          <img src={cartoon} alt="Cartoon" className="w-48 md:w-64 lg:w-180" />
+          <img src={cartoon} alt="Cartoon" className="w-48 md:w-64 lg:w-181" />
         </div>
       </div>
     </section>

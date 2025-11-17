@@ -88,3 +88,11 @@ html {
 .animate-pulse-slow { animation: pulse-slow 6s infinite ease-in-out }
 .animate-pulse-slower { animation: pulse-slower 9s infinite ease-in-out }
 .animate-spin-slow { animation: spin 4s linear infinite }
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
