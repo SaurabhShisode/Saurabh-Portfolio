@@ -9,7 +9,7 @@ import indiaSpaceLabLogo from "../assets/indiaspacelab.png";
 import defaultImg from "../assets/exp1.png";
 import expImg1 from "../assets/exp2.png";
 import expImg2 from "../assets/exp3.png";
-
+import Arrow from "../assets/arrow.svg";
 export const experiences = [
     {
         company: "Veritas Soft Solutions Pvt. Ltd.",
@@ -35,9 +35,9 @@ export default function Experience() {
     const [activeImage, setActiveImage] = useState(defaultImg);
 
     return (
-        <section id="experience" className="bg-[#0d1117] px-10 pb-28">
+        <section id="experience" className="bg-[#0d1117] px-10 pb-20">
             <motion.h1
-                className="font-inter text-5xl mb-10 text-center font-bold text-white"
+                className="font-inter text-5xl mb-10 text-center font-bold text-white z-10"
                 initial={{ opacity: 0, y: 80, scale: 0.85 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
@@ -46,20 +46,33 @@ export default function Experience() {
                 Professional <span className="text-[#caa9d3]">Experience</span>
             </motion.h1>
 
-            <div className="lg:flex  mx-44 items-end    gap-10">
+            <div className="lg:flex  mx-44   gap-10">
 
-              
-                <div className="relative w-full lg:w-[420px] h-[400px] bg-[#0d1117] rounded-2xl overflow-hidden flex items-start justify-end">
-                    
+
+                <div className="relative w-full lg:w-[420px] h-[400px] bg-[#0d1117] rounded-2xl flex items-start justify-end">
+
+                    <p className="border border-gray-800 px-3 py-2 absolute right-63 top-11 font-inter text-sm text-gray-400 rounded-full z-20 items-center">
+                        Touch Me
+                    </p>
+
+                    <img
+                        src={Arrow}
+                        className="absolute right-[215px] top-[70px] w-24 h-24 pointer-events-none text-white  scale-x-[-1] rotate-200"
+                        alt="arrow"
+                    />
+                    <a href="https://www.linkedin.com/in/saurabhshisode" target="_blank" rel="noopener noreferrer">
                     <img
                         src={activeImage}
-                        className="w-60 h-90 transition-all duration-500"
+                        className="w-65 h-95 transition-all duration-500 mt-4 mr-4"
+                        alt="preview"
                     />
+                    </a>
 
-                    
                 </div>
 
-            
+
+
+
                 <div className="flex flex-col flex-1 border border-[#2d384d] bg-[#121924] px-5 rounded-2xl p-4 py-6">
                     {experiences.map((exp, i) => (
                         <div
@@ -70,12 +83,12 @@ export default function Experience() {
                         >
                             <div className="flex gap-4">
 
-                                <div className="flex flex-col items-center justify-center w-24 gap-4">
+                                <div className="flex flex-col items-center justify-center w-24 gap-4 font-inter">
                                     <img src={exp.logo} className="w-20 h-12 object-contain" />
                                     <div className="w-[2px] h-14 bg-[#2d384d] mt-2" />
                                 </div>
 
-                                <div className="flex flex-col">
+                                <div className="flex flex-col font-inter">
                                     <h2 className="text-lg font-bold text-white">{exp.company}</h2>
                                     <p className="text-sm font-medium text-gray-300">{exp.role}</p>
                                     <p className="text-sm text-gray-500">{exp.duration}</p>

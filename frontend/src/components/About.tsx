@@ -42,12 +42,12 @@ export default function About() {
     const [copied, setCopied] = useState(false);
 
     const handleCopy = () => {
-        navigator.clipboard.writeText("saurabhshisode@gmail.com");
+        navigator.clipboard.writeText("shisodesaurabh48@gmail.com");
         setCopied(true);
         setTimeout(() => setCopied(false), 2000);
     };
     return (
-        <section id="about" className="bg-[#0d1117] text-white py-10 px-10 min-h-screen mb-20">
+        <section id="about" className="bg-[#0d1117] text-white py-10  min-h-screen mb-10">
             <div className="pb-10 ">
                 <div className="overflow-hidden">
                     <div
@@ -82,7 +82,7 @@ export default function About() {
 
 
 
-                <div className="grid grid-cols-5 grid-rows-12 gap-10 mx-44 z-50">
+                <div className="grid grid-cols-5 grid-rows-12 gap-10 mx-44 z-50 px-10">
                     <div
                         className="col-span-3 row-span-6 bg-[#121924] border border-[#1f2b3f] rounded-2xl h-160 bg-cover bg-center bg-no-repeat group"
 

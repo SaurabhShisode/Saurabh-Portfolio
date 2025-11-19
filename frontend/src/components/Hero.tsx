@@ -3,7 +3,8 @@ import { TypewriterEffect } from "./ui/typewriter-effect";
 import cartoon from "../assets/cartoon.png";
 import { MoveRight } from "lucide-react";
 import { motion } from "motion/react";
-
+import { Download } from "lucide-react"
+import { Phone } from 'lucide-react';
 const container = {
   hidden: {},
   show: {
@@ -43,7 +44,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col md:flex-row items-center justify-between px-10 pt-24 bg-gradient-to-b from-[#cdd4e7] to-[#1c48a8] overflow-hidden">
       <div className="relative z-10 space-y-4 ml-60 mr-10 flex items-center justify-between gap-6 w-[85%]">
-        
+
         <motion.div
           className="space-y-4 max-w-xl ml-auto"
           variants={container}
@@ -73,20 +74,31 @@ export default function Hero() {
             className="flex gap-4 pt-2 font-inter"
           >
             <a
-              href="#contact"
-              className="px-4 pb-3 pt-3.5 bg-black text-white rounded-lg transition-all duration-300 ease-in-out hover:bg-white hover:text-black"
-            >
-              Contact Me
+              href="mailto:shisodesaurabh48@gmail.com"
+              className="px-4 pb-3 pt-3.5 bg-black text-white rounded-lg transition-all duration-300 ease-in-out hover:bg-white hover:text-black flex gap-2 items-center"
+            > <Phone size={18} /> Contact Me
             </a>
-
             <a
+                href="/Saurabh Shisode Resume.pdf"
+                download
+                className="px-4 pb-3 pt-3.5 bg-black text-white rounded-lg transition-all duration-300 ease-in-out hover:bg-white hover:text-black w-fit flex gap-2 items-center"
+              >
+                <Download size={18} /> Resume
+              </a>
+              <a
               href="#projects"
               className="px-5 py-3 font-semibold rounded-lg transition-all duration-300 ease-in-out text-lg flex items-center gap-2  hover:scale-105 transform"
             >
               <span>Explore My Work</span>
               <MoveRight />
             </a>
+
+            
+            
           </motion.div>
+          
+              
+            
         </motion.div>
 
         <div className="flex-shrink-0 mr-10">

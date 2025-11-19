@@ -4,9 +4,16 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [hidden, setHidden] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [border, setBorder] = useState(false);
 
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
+
+    if (currentScrollY > window.innerHeight){
+      setBorder(true);
+    } else {
+      setBorder(false);
+    }
 
     
     if (currentScrollY > 180 && currentScrollY > lastScrollY) {
@@ -26,10 +33,11 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`w-full fixed top-0 left-0 bg-[#0d1117] text-white px-8 py-4 flex justify-between items-center z-50 transform transition-transform duration-300 ${
-        hidden ? "-translate-y-full" : "translate-y-0"
-      }`}
-    >
+  className={`w-full fixed top-0 left-0 bg-[#0d1117] text-white px-8 py-4 flex justify-between items-center z-50 transform transition-transform duration-300 ${
+    hidden ? "-translate-y-full" : "translate-y-0"
+  } ${border ? "border-b border-1.5 border-gray-800" : ""}`}
+>
+
       <h1 className="text-2xl tracking-tight font-grotesk">Saurabh</h1>
 
       <ul className="hidden md:flex gap-8 text-lg font-poppins">

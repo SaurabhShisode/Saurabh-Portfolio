@@ -1,49 +1,44 @@
+import { useEffect, useState } from "react"
+import { Download } from "lucide-react"
+import "./App.css"
+import Navbar from "./components/Navbar"
+import Hero from "./components/Hero"
+import About from "./components/About"
+import Experience from "./components/Experience"
+import Projects from "./components/Projects"
 
-import { Download } from 'lucide-react';
-import './App.css'
-import Navbar from './components/Navbar.tsx'
-import Hero from './components/Hero.tsx'
-import { Pointer } from './components/ui/pointer.tsx'
-import About from './components/About.tsx'
-import  Experience  from './components/Experience.tsx'
-function App() {
+export default function App() {
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > window.innerHeight * 0.7)
+    }
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
   return (
-    <div className='bg-[#0d1117]'>
-      
+    <div className="bg-[#0d1117]">
       <Navbar />
       <Hero />
       <About />
-      < Experience />
-      
-      <div className="fixed bottom-9 right-9 ">
-         <a href="/Saurabh Shisode Resume.pdf" download className="block">
-        <div className="relative w-24 h-24 rounded-full  ">
+      <Experience />
+      <Projects />
 
-          <div className="absolute inset-0 flex items-center justify-center animate-spin-slow">
-            <div className="absolute w-1 h-4 bg-yellow-300 rounded-full -top-6"></div>
-            <div className="absolute w-1 h-4 bg-yellow-300 rounded-full -bottom-6"></div>
-            <div className="absolute w-1 h-4 bg-yellow-300 rounded-full -left-4 -rotate-90"></div>
-            <div className="absolute w-1 h-4 bg-yellow-300 rounded-full -right-4 rotate-90"></div>
-            <div className="absolute w-1 h-4 bg-yellow-300 rounded-full rotate-45 -top-1 -right-0"></div>
-            <div className="absolute w-1 h-4 bg-yellow-300 rounded-full rotate-45 -bottom-1 -left-0"></div>
-            <div className="absolute w-1 h-4 bg-yellow-300 rounded-full -rotate-45 -top-1 -left-0"></div>
-            <div className="absolute w-1 h-4 bg-yellow-300 rounded-full -rotate-45 -bottom-1 -right-0"></div>
-          </div>
-
-
-          <div className="absolute inset-0 bg-yellow-400 rounded-full flex items-center justify-center group">
-            <div className="w-20 h-20 bg-white rounded-full flex flex-col items-center justify-center text-center group-hover:bg-yellow-400 transition-all duration-300 ease-in-out">
-              <Download className="w-6 h-6 text-[#1f2937] mb-0.5" />
-              <p className="text-[12px] font-poppins text-[#1f2937]">Resume</p>
-            </div>
-          </div>
-
-        </div>
+      <div className="fixed bottom-9 right-9 z-50">
+        <a
+          href="/Saurabh Shisode Resume.pdf"
+          download
+          className={`fixed bottom-10 right-0 bg-gray-400 text-black px-4 py-2 rounded-l-lg flex items-center gap-2 font-medium text-sm shadow-lg transition-all duration-500 ${
+            scrolled
+              ? "translate-x-0 opacity-100"
+              : "translate-x-full opacity-0 pointer-events-none"
+          }`}
+        >
+          <Download size={18} /> Resume
         </a>
       </div>
-
     </div>
   )
 }
-
-export default App
