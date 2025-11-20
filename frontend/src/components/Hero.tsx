@@ -4,7 +4,7 @@ import cartoon from "../assets/cartoon.png";
 import { MoveRight } from "lucide-react";
 import { motion } from "motion/react";
 import { Download } from "lucide-react"
-import { Phone } from 'lucide-react';
+import { Mail } from 'lucide-react';
 const container = {
   hidden: {},
   show: {
@@ -76,7 +76,7 @@ export default function Hero() {
             <a
               href="mailto:shisodesaurabh48@gmail.com"
               className="px-4 pb-3 pt-3.5 bg-black text-white rounded-lg transition-all duration-300 ease-in-out hover:bg-white hover:text-black flex gap-2 items-center"
-            > <Phone size={18} /> Contact Me
+            > <Mail size={18} /> Contact Me
             </a>
             <a
                 href="/Saurabh Shisode Resume.pdf"
