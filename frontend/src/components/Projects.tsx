@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
-import { useRef } from "react";
+
 import Glide from "../assets/glide.png";
 import Mockflow from "../assets/mockflow.png";
 import Cropcart from "../assets/cropcart.png";
@@ -9,7 +9,7 @@ import ChattyCat from "../assets/chattycat.png";
 import RailwaySystem from "../assets/railwaysystem.png";
 
 export default function Projects() {
-    const containerRef = useRef<HTMLDivElement | null>(null);
+   
 
     const projects = [
         {
@@ -66,34 +66,32 @@ export default function Projects() {
 
     return (
         <section id="projects" className="bg-[#0d1117] text-white pb-20">
-            <motion.h1
-                className="text-center text-5xl font-inter font-bold mb-10"
+            <motion.div
                 initial={{ opacity: 0, y: 100, scale: 0.9 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ duration: 0.7, ease: "easeOut" }}
-                viewport={{ once: true, amount: 0.4 }}
+                viewport={{ once: true, amount: 0.01 }}
+            >
+            <h1
+                className="text-center text-5xl font-inter font-bold mb-10"
             >
                 Featured <span className="text-[#caa9d3]">Projects</span>
-            </motion.h1>
+            </ h1>
 
             <div className="relative overflow-y-none mx-44 px-10">
 
-                
-                <motion.div
-                    ref={containerRef}
-                    initial={{ opacity: 0, y: 120, scale: 0.9 }}
-                    whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                    viewport={{ once: true, amount: 0.02 }}
+
+                <div
+                   
                     className="flex flex-col gap-6 hide-scrollbar h-max"
                 >
 
                     {projects.map((project, i) => (
                         <div
                             key={i}
-                            className="bg-[#121924] border border-[#2d384d] rounded-2xl p-6 flex justify-between hover:bg-[#1a2330] transition-all duration-300 font-inter overflow-hidden relative group"
+                            className="bg-[#121924] border border-[#2d384d] rounded-2xl p-6 flex justify-between hover:bg-[#1a2330] transition-all duration-300 font-inter overflow-hidden relative group "
                         >
-                            <div className="max-w-[60%]">
+                            <div className="max-w-[60%] pt-7">
                                 <h2 className="text-xl font-bold">{project.name}</h2>
                                 <p className="text-xs text-gray-500 mt-1">{project.timeline}</p>
 
@@ -149,8 +147,9 @@ export default function Projects() {
                         </div>
                     ))}
 
-                </motion.div>
+                </div>
             </div>
+            </motion.div>
 
         </section>
     );
