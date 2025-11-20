@@ -96,3 +96,32 @@ html {
   -ms-overflow-style: none; 
   scrollbar-width: none; 
 }
+@keyframes scroll-col {
+  0% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.animate-col1 {
+  animation: scroll-col 130s linear infinite;
+}
+
+.animate-col2 {
+  animation: scroll-col 114s linear infinite;
+}
+
+.animate-col3 {
+  animation: scroll-col 130s linear infinite;
+}
+@keyframes floating {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-floating {
+  animation: floating 6s ease-in-out infinite;
+}
