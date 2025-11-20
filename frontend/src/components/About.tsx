@@ -196,18 +196,18 @@ export default function About() {
 
                          
                             <div className="w-full h-2 bg-[#2d384d] rounded-full overflow-hidden flex mb-3">
-                                <div className="bg-[#3178c6] w-[59.2%]"></div>
-                                <div className="bg-[#f1e05a] w-[18.07%]"></div>
+                                <div className="bg-purple-500 w-[59.2%]"></div>
+                                <div className="bg-green-400 w-[18.07%]"></div>
                                 <div className="bg-[#e34c26] w-[8.06%]"></div>
                                 <div className="bg-[#563d7c] w-[6.75%]"></div>
                                 <div className="bg-[#b07219] w-[6.27%]"></div>
-                                <div className="bg-[#3572A5] w-[1.65%]"></div>
+                                <div className="bg-blue-500 w-[1.65%]"></div>
                             </div>
 
                             
                             <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-xs text-gray-300 font-inter">
                                 <div className="flex items-center gap-2">
-                                    <span className="w-3 h-3 bg-[#3178c6] rounded-full"></span>
+                                    <span className="w-3 h-3 bg-purple-500 rounded-full"></span>
                                     TypeScript 59.20%
                                 </div>
                                 <div className="flex items-center gap-2">
@@ -215,7 +215,7 @@ export default function About() {
                                     CSS 6.75%
                                 </div>
                                 <div className="flex items-center gap-2">
-                                    <span className="w-3 h-3 bg-[#f1e05a] rounded-full"></span>
+                                    <span className="w-3 h-3 bg-green-400 rounded-full"></span>
                                     JavaScript 18.07%
                                 </div>
                                 <div className="flex items-center gap-2">
@@ -227,7 +227,7 @@ export default function About() {
                                     HTML 8.06%
                                 </div>
                                 <div className="flex items-center gap-2">
-                                    <span className="w-3 h-3 bg-[#3572A5] rounded-full"></span>
+                                    <span className="w-3 h-3 bg-blue-500 rounded-full"></span>
                                     Python 1.65%
                                 </div>
                             </div>
