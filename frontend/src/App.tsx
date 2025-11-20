@@ -11,7 +11,7 @@ import Projects from "./components/Projects"
 import Testimonials from "./components/Testimonials"
 import ExtraCurricular from "./components/ExtraCurricular"
 import ContactSection from "./components/Contact"   
-import Footer from "./components/footer"
+import Footer from "./components/Footer"
 export default function App() {
   const [scrolled, setScrolled] = useState(false)
 
