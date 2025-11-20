@@ -35,7 +35,7 @@ export default function Experience() {
     const [activeImage, setActiveImage] = useState(defaultImg);
 
     return (
-        <section id="experience" className="bg-[#0d1117] px-10 pb-20">
+        <section id="work" className="bg-[#0d1117] px-10 pb-20">
             <motion.h1
                 className="font-inter text-5xl mb-10 text-center font-bold text-white z-10"
                 initial={{ opacity: 0, y: 80, scale: 0.85 }}
