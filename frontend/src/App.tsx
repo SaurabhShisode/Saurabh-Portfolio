@@ -1,14 +1,24 @@
 import { useEffect, useState } from "react"
+import { useForm } from "@formspree/react"     // <-- IMPORTANT
 import { Download } from "lucide-react"
 import "./App.css"
+
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import About from "./components/About"
 import Experience from "./components/Experience"
 import Projects from "./components/Projects"
-
+import Testimonials from "./components/Testimonials"
+import ExtraCurricular from "./components/ExtraCurricular"
+import ContactSection from "./components/Contact"   
+import Footer from "./components/footer"
 export default function App() {
   const [scrolled, setScrolled] = useState(false)
+
+  
+  const [state, handleSubmit] = useForm("mpwbkgnz")
+
+ 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,6 +35,13 @@ export default function App() {
       <About />
       <Experience />
       <Projects />
+      <Testimonials />
+      <ExtraCurricular />
+
+    
+      <ContactSection state={state} handleSubmit={handleSubmit} />
+      <Footer />
+
 
       <div className="fixed bottom-9 right-9 z-50">
         <a
