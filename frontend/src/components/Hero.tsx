@@ -86,7 +86,7 @@ export default function Hero() {
             variants={item}
             className="flex flex-col sm:flex-row 
               gap-4 pt-2 font-inter
-              justify-center md:justify-start px-20 md:px-0 text-sm"
+              justify-center md:justify-start px-20 md:px-0 text-sm w-fit"
           >
             <a
               href="mailto:shisodesaurabh48@gmail.com"
