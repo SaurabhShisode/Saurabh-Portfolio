@@ -37,10 +37,10 @@ export default function Navbar() {
         } ${border ? "border-b border-1.5 border-gray-800" : ""}`}
     >
 
-      <h1 className="text-2xl tracking-tight font-grotesk">Saurabh<span className="text-gray-500">
+      <h1 className="text-xl tracking-tight font-grotesk">Saurabh<span className="text-gray-500">
         _Commits</span></h1>
 
-      <ul className="hidden md:flex gap-8 text-lg font-poppins">
+      <ul className="hidden md:flex gap-8 text-base font-poppins">
         <li className="hover:bg-white p-2 rounded-lg hover:text-[#0d1117] transition-all duration-300 ease-in-out">
           <a href="#about">About</a>
         </li>

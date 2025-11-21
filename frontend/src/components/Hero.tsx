@@ -32,7 +32,7 @@ const item = {
 
 export default function Hero() {
   const gradientClass =
-    "bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text text-4xl md:text-6xl";
+    "bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text text-3xl md:text-5xl";
 
   const words = [
     { text: "Hi,", className: `${gradientClass} font-inter` },
@@ -42,7 +42,7 @@ export default function Hero() {
   ];
 
   return (
-    <section className="relative min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-10 pt-24 bg-gradient-to-b from-[#cdd4e7] to-[#1c48a8] overflow-hidden">
+    <section className="relative min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-8 pt-24 bg-gradient-to-b from-[#cdd4e7] to-[#1c48a8] overflow-hidden">
 
       <div className="relative z-10 space-y-4 
         flex flex-col md:flex-row 
@@ -51,11 +51,11 @@ export default function Hero() {
         gap-10 md:gap-6 
         w-full md:w-[85%]
         mx-auto
-        lg:ml-60 lg:mr-10 ">
+        lg:ml-50 lg:mr-6 ">
 
         <motion.div
           className="space-y-4 
-            max-w-xl 
+            md:min-w-lg 
             text-center md:text-left
             md:ml-auto mt-10 md:mt-0"
           variants={container}
@@ -77,7 +77,7 @@ export default function Hero() {
 
           <motion.p
             variants={item}
-            className="text-lg text-[#0c234a] font-inter"
+            className="text-base text-[#0c234a] font-inter"
           >
             A software developer who builds web apps, loves backend and creates useful things people enjoy.
           </motion.p>
@@ -86,7 +86,7 @@ export default function Hero() {
             variants={item}
             className="flex flex-col sm:flex-row 
               gap-4 pt-2 font-inter
-              justify-center md:justify-start px-20 md:px-0"
+              justify-center md:justify-start px-20 md:px-0 text-sm"
           >
             <a
               href="mailto:shisodesaurabh48@gmail.com"
@@ -120,7 +120,7 @@ export default function Hero() {
                 hover:scale-105 transition-all duration-300 
               "
             >
-              <span>Explore My Work</span>
+              <span className="text-base">Explore My Work</span>
               <MoveRight className="rotate-90 md:rotate-0" />
             </a>
           </motion.div>
@@ -132,10 +132,10 @@ export default function Hero() {
             src={cartoon}
             alt="Cartoon"
             className="
-    relative -top-7 scale-115
-    w-[500px] md:w-64 lg:w-181 
+    relative top-0 scale-115
+    w-[500px] md:w-64 lg:w-140 
     drop-shadow-xl
-    md:scale-100 md:top-0
+    md:scale-100 md:top-0 md:right-20
   "
           />
 

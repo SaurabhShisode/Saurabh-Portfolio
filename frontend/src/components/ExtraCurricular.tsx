@@ -30,8 +30,8 @@ export default function ExtraCurricular() {
                         />
 
 
-                        <div className="ml-28 flex flex-col gap-3">
-                            <h2 className="text-7xl font-bold font-grotesk">Volleyball</h2>
+                        <div className="md:ml-28 flex flex-col gap-3 z-10">
+                            <h2 className=" text-3xl md:text-7xl font-bold font-grotesk">Volleyball</h2>
 
                             <p
                                 className="text-gray-300 text-sm leading-relaxed opacity-0 
