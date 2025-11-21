@@ -42,9 +42,9 @@ export default function Testimonials() {
     ];
 
     return (
-        <section id="testimonials" className="pb-20 bg-[#0d1117] text-white font-inter">
+        <section id="testimonials" className="pb-10 md:pb-20 bg-[#0d1117] text-white font-inter">
             <h1
-                className="font-inter text-5xl mb-10 text-center font-bold text-white z-10 rotate-[-1deg]"
+                className="font-inter text-3xl md:text-5xl mb-10 text-center font-bold text-white z-10 rotate-[-1deg]"
                
             >
                 What People <span className="text-[#caa9d3]">Say</span>
@@ -52,10 +52,10 @@ export default function Testimonials() {
 
             <div className="relative overflow-hidden overflow-x-visible h-96">
              
-                <div className="absolute top-0 w-full h-20 bg-gradient-to-b from-[#0d1117] to-transparent z-20"></div>
-                <div className="absolute bottom-0 w-full h-20 bg-gradient-to-t from-[#0d1117] to-transparent z-20"></div>
+                <div className="absolute -translate-y-1 md:-translate-y-0 top-0 w-full h-20 bg-gradient-to-b from-[#0d1117] to-transparent z-20"></div>
+                <div className="absolute translate-y-1 md:translate-y-0 bottom-0  w-full h-20 bg-gradient-to-t from-[#0d1117] to-transparent z-20"></div>
 
-                <div className="grid grid-cols-3 gap-10 px-54 absolute">
+                <div className="grid grid-cols-3 gap-5 md:gap-10 px-4 md:px-54 absolute">
 
  
                     <div className="relative ">
@@ -63,7 +63,7 @@ export default function Testimonials() {
                             {[...Array(10)].flatMap(() => testimonialsCol1).map((t, i) => (
                                 <div
                                     key={i}
-                                    className="p-6 bg-[#121924]/80 backdrop-blur-sm border border-[#2d384d] 
+                                    className="p-3 md:p-6 bg-[#121924]/80 backdrop-blur-sm border border-[#2d384d] 
              rounded-xl h-40 shadow-[0_0_20px_rgba(0,0,0,0.3)]
              transition-all duration-500 transform 
              hover:-translate-y-2 hover:shadow-[0_0_25px_rgba(202,169,211,0.4)] 
@@ -71,7 +71,7 @@ export default function Testimonials() {
              animate-floating
              rotate-[0deg] hover:rotate-[-1deg] group"
                                 >
-                                    <p className="text-gray-300 leading-relaxed font-inter text-xl tracking-wide">
+                                    <p className="text-gray-300 leading-relaxed font-inter text-[13px] md:text-xl tracking-wide">
                                         {t}
                                     </p>
                                     
@@ -87,7 +87,7 @@ export default function Testimonials() {
                             {[...Array(10)].flatMap(() => testimonialsCol2).map((t, i) => (
                                 <div
                                     key={i}
-                                    className="p-6 bg-[#121924]/80 backdrop-blur-sm border border-[#2d384d] 
+                                    className="p-3 md:p-6 bg-[#121924]/80 backdrop-blur-sm border border-[#2d384d] 
              rounded-xl h-40 shadow-[0_0_20px_rgba(0,0,0,0.3)]
              transition-all duration-500 transform 
              hover:-translate-y-2 hover:shadow-[0_0_25px_rgba(202,169,211,0.4)] 
@@ -95,7 +95,7 @@ export default function Testimonials() {
              animate-floating
              rotate-[0deg] hover:rotate-[-1deg]"
                                 >
-                                    <p className="text-gray-300 leading-relaxed font-inter text-xl tracking-wide">
+                                    <p className="text-gray-300 leading-relaxed font-inter text-[13px] md:text-xl tracking-wide">
                                         {t}
                                     </p>
                                 </div>
@@ -109,7 +109,7 @@ export default function Testimonials() {
                             {[...Array(10)].flatMap(() => testimonialsCol3).map((t, i) => (
                                 <div
                                     key={i}
-                                    className="p-6 bg-[#121924]/80 backdrop-blur-sm border border-[#2d384d] 
+                                    className="p-3 md:p-6 bg-[#121924]/80 backdrop-blur-sm border border-[#2d384d] 
              rounded-xl h-40 shadow-[0_0_20px_rgba(0,0,0,0.3)]
              transition-all duration-500 transform 
              hover:-translate-y-2 hover:shadow-[0_0_25px_rgba(202,169,211,0.4)] 
@@ -117,7 +117,7 @@ export default function Testimonials() {
              animate-floating
              rotate-[0deg] hover:rotate-[-1deg]"
                                 >
-                                    <p className="text-gray-300 leading-relaxed font-inter text-xl tracking-wide">
+                                    <p className="text-gray-300 leading-relaxed font-inter text-[13px] md:text-xl tracking-wide">
                                         {t}
                                     </p>
                                 </div>
