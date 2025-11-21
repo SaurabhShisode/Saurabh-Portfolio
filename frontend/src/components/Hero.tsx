@@ -32,7 +32,7 @@ const item = {
 
 export default function Hero() {
   const gradientClass =
-    "bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text";
+    "bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text text-4xl md:text-6xl";
 
   const words = [
     { text: "Hi,", className: `${gradientClass} font-inter` },
@@ -42,18 +42,31 @@ export default function Hero() {
   ];
 
   return (
-    <section className="relative min-h-screen flex flex-col md:flex-row items-center justify-between px-10 pt-24 bg-gradient-to-b from-[#cdd4e7] to-[#1c48a8] overflow-hidden">
-      <div className="relative z-10 space-y-4 ml-60 mr-10 flex items-center justify-between gap-6 w-[85%]">
+    <section className="relative min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-10 pt-24 bg-gradient-to-b from-[#cdd4e7] to-[#1c48a8] overflow-hidden">
+
+      <div className="relative z-10 space-y-4 
+        flex flex-col md:flex-row 
+        items-center  
+        justify-between
+        gap-10 md:gap-6 
+        w-full md:w-[85%]
+        mx-auto
+        lg:ml-60 lg:mr-10 ">
 
         <motion.div
-          className="space-y-4 max-w-xl ml-auto"
+          className="space-y-4 
+            max-w-xl 
+            text-center md:text-left
+            md:ml-auto mt-10 md:mt-0"
           variants={container}
           initial="hidden"
           animate="show"
         >
           <motion.button
             variants={item}
-            className="px-2 py-1 border border-black rounded-lg text-sm font-inter"
+            className=" px-2 py-1 border border-black 
+              rounded-lg text-sm font-inter
+              mx-auto md:mx-0"
           >
             Dear Stranger
           </motion.button>
@@ -71,38 +84,61 @@ export default function Hero() {
 
           <motion.div
             variants={item}
-            className="flex gap-4 pt-2 font-inter"
+            className="flex flex-col sm:flex-row 
+              gap-4 pt-2 font-inter
+              justify-center md:justify-start px-20 md:px-0"
           >
             <a
               href="mailto:shisodesaurabh48@gmail.com"
-              className="px-4 pb-3 pt-3.5 bg-black text-white rounded-lg transition-all duration-300 ease-in-out hover:bg-white hover:text-black flex gap-2 items-center"
-            > <Mail size={18} /> Contact Me
+              className="
+                px-4 py-3 bg-black text-white 
+                rounded-lg flex gap-2 items-center justify-center
+                transition-all duration-300 hover:bg-white hover:text-black 
+              "
+            >
+              <Mail size={18} /> Contact Me
             </a>
+
             <a
-                href="/Saurabh Shisode Resume.pdf"
-                download
-                className="px-4 pb-3 pt-3.5 bg-black text-white rounded-lg transition-all duration-300 ease-in-out hover:bg-white hover:text-black w-fit flex gap-2 items-center"
-              >
-                <Download size={18} /> Resume
-              </a>
-              <a
+              href="/Saurabh Shisode Resume.pdf"
+              download
+              className="
+                px-4 py-3 bg-black text-white 
+                rounded-lg flex gap-2 items-center justify-center
+                transition-all duration-300 hover:bg-white hover:text-black
+              "
+            >
+              <Download size={18} /> Resume
+            </a>
+
+            <a
               href="#projects"
-              className="px-5 py-3 font-semibold rounded-lg transition-all duration-300 ease-in-out text-lg flex items-center gap-2  hover:scale-105 transform"
+              className="
+                px-5 py-3 font-semibold rounded-lg 
+                text-lg flex items-center gap-2 
+                justify-center
+                hover:scale-105 transition-all duration-300 
+              "
             >
               <span>Explore My Work</span>
-              <MoveRight />
+              <MoveRight className="rotate-90 md:rotate-0" />
             </a>
-
-            
-            
           </motion.div>
-          
-              
-            
         </motion.div>
 
-        <div className="flex-shrink-0 mr-10">
-          <img src={cartoon} alt="Cartoon" className="w-48 md:w-64 lg:w-181" />
+
+        <div className="flex-shrink-0 md:mr-10">
+          <img
+            src={cartoon}
+            alt="Cartoon"
+            className="
+    relative -top-7 scale-115
+    w-[500px] md:w-64 lg:w-181 
+    drop-shadow-xl
+    md:scale-100 md:top-0
+  "
+          />
+
         </div>
       </div>
     </section>
