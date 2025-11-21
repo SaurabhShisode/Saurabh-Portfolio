@@ -57,7 +57,7 @@ export default function Projects() {
             timeline: "Nov 2024",
             description:
                 "A feature rich Python Discord bot offering quotes, reminders, polls, definitions, coin flips, coding challenges, weather info and GIFs.",
-            tech: ["Python", "Discord.py", "MongoDB", "Hugging Face API", "OpenWeather API", "YouTube API", "Tenor API"],
+            tech: ["Python", "Discord.py", "MongoDB", "Hugging Face API", "OpenWeather API", "YouTube API"],
             github: "https://github.com/SaurabhShisode",
             live: null,
             image: ChattyCat
@@ -73,12 +73,12 @@ export default function Projects() {
                 viewport={{ once: true, amount: 0.01 }}
             >
             <h1
-                className="text-center text-3xl md:text-5xl font-inter font-bold mb-10"
+                className="text-center text-3xl md:text-4xl font-inter font-bold mb-10"
             >
                 Featured <span className="text-[#caa9d3]">Projects</span>
             </ h1>
 
-            <div className="relative overflow-y-none md:mx-44 px-4 md:px-10">
+            <div className="relative overflow-y-none md:mx-24 px-4 md:px-10">
 
 
                 <div
@@ -92,7 +92,7 @@ export default function Projects() {
                             className="bg-[#121924] border border-[#2d384d] rounded-2xl p-3 md:p-6 flex justify-between hover:bg-[#1a2330] transition-all duration-300 font-inter overflow-hidden relative group "
                         >
                             <div className="md:max-w-[60%] pt-3 md:pt-7">
-                                <h2 className="text-xl font-bold">{project.name}</h2>
+                                <h2 className="text-lg font-bold">{project.name}</h2>
                                 <p className="text-xs text-gray-500 mt-1">{project.timeline}</p>
 
                                 <p className="text-sm text-gray-300 mt-4">{project.description}</p>
@@ -140,7 +140,8 @@ export default function Projects() {
                                     <img
                                         src={project.image}
                                         alt={project.name}
-                                        className="relative right-0 -bottom-6 translate-x-1/5 group-hover:translate-x-10 transition-transform duration-600 ease-in-out rounded-tl-2xl group-hover:scale-104 w-120 hidden md:block"
+                                        className="relative right-0 bottom-0 translate-x-1/5 
+                                        translate-y-1/5 group-hover:translate-x-10 translate-y-1/6 transition-transform duration-600 ease-in-out rounded-tl-2xl group-hover:scale-104 w-120 hidden md:block"
                                     />
                                 </a>
                             )}

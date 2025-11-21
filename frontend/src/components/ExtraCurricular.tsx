@@ -8,7 +8,7 @@ export default function ExtraCurricular() {
         <section className="bg-[#0d1117] text-white pb-10 md:pb-20 font-inter">
 
             <motion.h1
-                className="text-center text-3xl md:text-5xl font-bold mb-10"
+                className="text-center text-3xl md:text-4xl font-bold mb-10"
                 initial={{ opacity: 0, y: 80, scale: 0.85 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
@@ -21,17 +21,17 @@ export default function ExtraCurricular() {
                 <div className="grid grid-cols-6 grid-rows-5 gap-4">
 
                     <div
-                        className="col-span-3 row-span-3 bg-[#121924] border border-[#2d384d] rounded-2xl p-8 flex gap-6 hover:bg-[#1a2330] transition-all duration-300 group items-center relative overflow-hidden"
+                        className="col-span-3 row-span-3 bg-[#121924] border border-[#2d384d] rounded-2xl p-8 flex gap-6 hover:bg-[#1a2330] transition-all duration-300 group relative overflow-hidden text-left justify-center items-center"
                     >
 
                         <Volleyball
                             size={200}
-                            className="text-gray-700 absolute left-[-60px] opacity-40 group-hover:opacity-90 transition-all duration-500"
+                            className="text-gray-700 absolute left-[-80px] opacity-40 group-hover:opacity-90 transition-all duration-500"
                         />
 
 
-                        <div className="md:ml-28 flex flex-col gap-3 z-10">
-                            <h2 className=" text-3xl md:text-7xl font-bold font-grotesk">Volleyball</h2>
+                        <div className="md:ml-28 flex flex-col  gap-3 z-10 md:text-left">
+                            <h2 className=" text-3xl md:text-6xl font-bold font-grotesk">Volleyball</h2>
 
                             <p
                                 className="text-gray-300 text-sm leading-relaxed opacity-0 
@@ -52,12 +52,12 @@ export default function ExtraCurricular() {
                         
                         <Gamepad2
                             size={200}
-                            className="text-gray-700 absolute right-[-60px] opacity-40 group-hover:opacity-90 transition-all duration-500"
+                            className="text-gray-700 absolute right-[-90px] opacity-40 group-hover:opacity-90 transition-all duration-500"
                         />
 
                         
-                        <div className="mr-24 flex flex-col text-right gap-3">
-                            <h2 className="text-7xl font-bold font-grotesk">Gaming</h2>
+                        <div className="md:mr-24 flex flex-col md:text-right gap-3 z-20">
+                            <h2 className=" text-3xl md:text-6xl font-bold font-grotesk">Gaming</h2>
 
                             <p
                                 className="text-gray-300 text-sm leading-relaxed opacity-0 
@@ -82,7 +82,7 @@ export default function ExtraCurricular() {
 
                      
                         <div className="flex flex-col text-center gap-3">
-                            <h2 className="text-7xl font-bold font-grotesk mb-2">Video Editing</h2>
+                            <h2 className="text-3xl md:text-6xl font-bold font-grotesk mb-2">Video Editing</h2>
 
                             <p
                                 className="text-gray-300 text-sm leading-relaxed opacity-0 

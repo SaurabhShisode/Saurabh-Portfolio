@@ -37,7 +37,7 @@ export default function Experience() {
     return (
         <section id="work" className="bg-[#0d1117] px-4 md:px-10 pb-10 md:pb-20">
             <motion.h1
-                className="font-inter text-3xl md:text-5xl mb-10 text-center font-bold text-white z-10"
+                className="font-inter text-3xl md:text-4xl mb-10 text-center font-bold text-white z-10"
                 initial={{ opacity: 0, y: 80, scale: 0.85 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
@@ -46,7 +46,7 @@ export default function Experience() {
                 Professional <span className="text-[#caa9d3]">Experience</span>
             </motion.h1>
 
-            <div className="lg:flex  md:mx-44   gap-10">
+            <div className="lg:flex  md:mx-24   gap-10">
 
                 <div className="relative w-full lg:w-[420px] h-[400px] bg-[#0d1117] rounded-2xl flex items-start justify-end">
 
@@ -62,7 +62,7 @@ export default function Experience() {
                     <a href="https://www.linkedin.com/in/saurabhshisode" target="_blank" rel="noopener noreferrer">
                     <img
                         src={activeImage}
-                        className="w-65 h-95 transition-all duration-500 md:mt-4 md:mr-4"
+                        className="w-65 h-95 transition-all duration-500 md:mt-4 md:mr-4 md:translate-x-5"
                         alt="preview"
                     />
                     </a>
@@ -88,7 +88,7 @@ export default function Experience() {
                                 </div>
 
                                 <div className="flex flex-col font-inter">
-                                    <h2 className="text-lg font-bold text-white">{exp.company}</h2>
+                                    <h2 className="text-base md:text-lg font-bold text-white">{exp.company}</h2>
                                     <p className="text-sm font-medium text-gray-300">{exp.role}</p>
                                     <p className="text-sm text-gray-500">{exp.duration}</p>
 

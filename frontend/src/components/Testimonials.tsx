@@ -44,7 +44,7 @@ export default function Testimonials() {
     return (
         <section id="testimonials" className="pb-10 md:pb-20 bg-[#0d1117] text-white font-inter">
             <h1
-                className="font-inter text-3xl md:text-5xl mb-10 text-center font-bold text-white z-10 rotate-[-1deg]"
+                className="font-inter text-3xl md:text-4xl mb-10 text-center font-bold text-white z-10 rotate-[-1deg]"
                
             >
                 What People <span className="text-[#caa9d3]">Say</span>
@@ -71,7 +71,7 @@ export default function Testimonials() {
              animate-floating
              rotate-[0deg] hover:rotate-[-1deg] group"
                                 >
-                                    <p className="text-gray-300 leading-relaxed font-inter text-[13px] md:text-xl tracking-wide">
+                                    <p className="text-gray-300 leading-relaxed font-inter text-[13px] md:text-lg tracking-wide">
                                         {t}
                                     </p>
                                     
@@ -95,7 +95,7 @@ export default function Testimonials() {
              animate-floating
              rotate-[0deg] hover:rotate-[-1deg]"
                                 >
-                                    <p className="text-gray-300 leading-relaxed font-inter text-[13px] md:text-xl tracking-wide">
+                                    <p className="text-gray-300 leading-relaxed font-inter text-[13px] md:text-lg tracking-wide">
                                         {t}
                                     </p>
                                 </div>
@@ -117,7 +117,7 @@ export default function Testimonials() {
              animate-floating
              rotate-[0deg] hover:rotate-[-1deg]"
                                 >
-                                    <p className="text-gray-300 leading-relaxed font-inter text-[13px] md:text-xl tracking-wide">
+                                    <p className="text-gray-300 leading-relaxed font-inter text-[13px] md:text-lg tracking-wide">
                                         {t}
                                     </p>
                                 </div>

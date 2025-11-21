@@ -71,7 +71,7 @@ export default function About() {
             </div>
             <div className="relative">
                 <motion.h1
-                    className="font-inter text-3xl md:text-5xl mb-10 text-center font-bold relative z-0"
+                    className="font-inter text-3xl md:text-4xl mb-10 text-center font-bold relative z-0"
                     initial={{ opacity: 0, y: 80, scale: 0.85 }}
                     whileInView={{ opacity: 1, y: 0, scale: 1 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
@@ -82,22 +82,24 @@ export default function About() {
 
 
 
-                <div className="grid grid-cols-1 md:grid-cols-5 md:grid-rows-12 gap-6 md:gap-10 px-4 md:px-10 md:mx-44 z-50">
+                <div className="grid grid-cols-1 md:grid-cols-5 md:grid-rows-12 gap-6 md:gap-8 px-4 md:px-10 md:mx-24 z-50 ">
 
                     <div
                         className="
       bg-[#121924] border border-[#1f2b3f] rounded-2xl 
-       md:p-0 h-40 md:h-160 
+       md:p-0 h-40 md:h-150 
       col-span-1 md:col-span-3 md:row-span-6 
-      bg-cover bg-center bg-no-repeat group overflow-hidden
+      bg-cover bg-center bg-no-repeat group overflow-hidden 
     "
                     >
-                        <h1 className="font-inter text-lg md:text-3xl font-bold p-4 md:p-9 mr-18 group-hover:ml-3 transition-all duration-300 ease-in-out">
+                        <h1 className="font-inter text-base md:text-2xl font-bold p-4 md:p-9 mr-18 group-hover:ml-3 transition-all duration-300 ease-in-out">
                             I create software that turns ideas into scalable products
                         </h1>
 
                         <div className="relative overflow-hidden w-full">
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 w-full max-w-5xl mx-auto px-6 translate-x-[40px] md:translate-x-[120px] group-hover:translate-x-0 transition-all duration-600 ease-in-out mb-4 md:mb-0">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 w-full max-w-3xl mx-auto px-6 translate-x-[40px] 
+                            translate-y-[6px] md:translate-x-[120px] 
+                            md:translate-y-0 group-hover:translate-x-0transition-all duration-600 ease-in-out mb-4 md:mb-0">
 
                                 {(window.innerWidth < 768 ? repos.slice(0, 3) : repos).map((repo, i) => (
                                     <div
@@ -105,7 +107,7 @@ export default function About() {
                                         className="border border-[#2d384d] bg-[#0d1117] rounded-xl p-4 md:p-5 flex flex-col gap-2 md:gap-3 hover:bg-[#111826] transition-all"
                                     >
                                         <div className="flex justify-between items-center">
-                                            <a className="text-[#2f81f7] font-medium text-base md:text-lg hover:underline"
+                                            <a className="text-[#2f81f7] font-medium text-base md:text-sm hover:underline"
                                                 href={repo.url}
                                                 target="_blank"
                                                 rel="noopener noreferrer font-inter">
@@ -134,7 +136,7 @@ export default function About() {
     md:row-span-3 md:col-start-4 
     bg-[#121924] border border-[#1f2b3f] rounded-2xl relative group overflow-hidden h-40 md:h-auto
   ">
-                        <h1 className="font-inter text-lg md:text-3xl font-bold p-4 md:p-9 md:mr-18 group-hover:ml-3 transition-all duration-300 ease-in-out text-white leading-snug relative z-10">
+                        <h1 className="font-inter text-base md:text-2xl font-bold p-4 md:p-9 md:mr-18 group-hover:ml-3 transition-all duration-300 ease-in-out text-white leading-snug relative z-10">
                             My expertise include
                             <span className="block">Web, AI & Backend</span>
                         </h1>
@@ -185,7 +187,7 @@ export default function About() {
     md:row-span-3 md:col-start-4 md:row-start-4 
     bg-[#121924] border border-[#1f2b3f] rounded-2xl md:p-4 group overflow-hidden h-40 md:h-auto
   ">
-                        <h1 className="font-inter text-lg md:text-3xl font-bold p-3 md:p-5 mr-18 leading-relaxed group-hover:ml-3 transition-all duration-300 ease-in-out">
+                        <h1 className="font-inter text-base md:text-2xl font-bold p-3 md:p-5 mr-18 leading-relaxed group-hover:ml-3 transition-all duration-300 ease-in-out">
                             <span className="text-sm font-light block">I build products<span className="md:block">with optimised</span></span>
                             <span className="block">tech stacks</span>
                         </h1>
@@ -220,7 +222,7 @@ export default function About() {
     md:row-span-3 md:row-start-7 
     bg-[#121924] border border-[#1f2b3f] rounded-2xl md:p-4 overflow-hidden group h-40 md:h-auto
   ">
-                        <h1 className="font-inter text-lg md:text-3xl font-bold p-3 md:p-5  md:mr-20 group-hover:ml-3 transition-all duration-300 ease-in-out z-10 relative group-hover:opacity-0">
+                        <h1 className="font-inter text-base md:text-2xl font-bold p-3 md:p-5  md:mr-20 group-hover:ml-3 transition-all duration-300 ease-in-out z-10 relative group-hover:opacity-0">
                             A curious developer obsessed  
                             <span className="block md:inline"> with problem solving</span>
                             <span className="block">and user</span>
@@ -228,10 +230,22 @@ export default function About() {
                         </h1>
 
                         <img
-                            src={badge}
-                            alt="gif"
-                            className="absolute w-28 bottom-6  right-4 md:bottom-15 md:right-0 md:w-48 object-contain opacity-90 transition-all duration-700 ease-in-out group-hover:scale-120 group-hover:right-35 group-hover:bottom-10"
-                        />
+  src={badge}
+  alt="gif"
+  className="
+    absolute w-28 bottom-6 right-4 
+    md:w-44 md:bottom-15 md:right-0
+    object-contain opacity-90 
+    transition-all duration-700 ease-in-out
+    
+    group-hover:bottom-1/2 
+    group-hover:right-1/2 
+    group-hover:translate-x-1/2 
+    group-hover:translate-y-1/2 
+    group-hover:scale-120
+  "
+/>
+
                     </div>
 
                     <div className="
@@ -245,7 +259,7 @@ export default function About() {
                         </div>
 
                         <div className="relative z-10 flex flex-col items-center justify-center text-center px-8 py-16 h-full ">
-                            <h1 className="font-inter text-lg md:text-3xl font-bold text-white drop-shadow-md font-inter">
+                            <h1 className="font-inter text-base md:text-2xl font-bold text-white drop-shadow-md font-inter">
                                 Have an idea? Tell Me
                                 <span className="block">About It!</span>
                             </h1>
@@ -265,9 +279,9 @@ export default function About() {
                     <div className="
     col-span-1 md:col-span-3 
     md:row-span-6 md:col-start-3 md:row-start-7 
-    bg-[#121924] border border-[#1f2b3f] rounded-2xl md:p-4 group overflow-hidden relative h-40 md:h-160
+    bg-[#121924] border border-[#1f2b3f] rounded-2xl md:p-4 group overflow-hidden relative h-40 md:h-150
   ">
-                        <h1 className="font-inter text-lg md:text-3xl font-bold p-3 md:p-5 mr-20 group-hover:ml-3 transition-all duration-300 ease-in-out">
+                        <h1 className="font-inter text-base md:text-2xl font-bold p-3 md:p-5 mr-20 group-hover:ml-3 transition-all duration-300 ease-in-out">
                             <span className="hidden md:block">
                             <span className="mb-1 md:mb-3 text-xs md:text-sm font-light block">The Insider</span>
                             Solving real-world algorithmic challenges to sharpen problem-solving and system thinking
@@ -284,7 +298,10 @@ export default function About() {
                             <img
                                 src={leetcode}
                                 alt="LeetCode"
-                                className="relative right-0 -bottom-7 object-contain translate-x-50 -translate-y-35 md:translate-x-1/5 md:-translate-y-0 group-hover:translate-x-24 transition-transform duration-600 ease-in-out rounded-2xl group-hover:scale-104"
+                                className="relative right-0 bottom-0 object-contain translate-x-50 -translate-y-25 
+                                md:translate-x-1/5 md:translate-y-13 
+                                group-hover:translate-x-23 
+                                group-hover:translate-y-11 transition-transform duration-600 ease-in-out rounded-2xl group-hover:scale-104"
                             />
                         </a>
                     </div>
