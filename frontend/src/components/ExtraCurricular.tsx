@@ -5,10 +5,10 @@ import { Volleyball, Clapperboard, Gamepad2 } from "lucide-react";
 
 export default function ExtraCurricular() {
     return (
-        <section className="bg-[#0d1117] text-white pb-20 font-inter">
+        <section className="bg-[#0d1117] text-white pb-10 md:pb-20 font-inter">
 
             <motion.h1
-                className="text-center text-5xl font-bold mb-10"
+                className="text-center text-3xl md:text-5xl font-bold mb-10"
                 initial={{ opacity: 0, y: 80, scale: 0.85 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
@@ -17,7 +17,7 @@ export default function ExtraCurricular() {
                 Beyond <span className="text-[#caa9d3]">Studies</span>
             </motion.h1>
 
-            <div className="mx-54">
+            <div className="mx-4 md:mx-54">
                 <div className="grid grid-cols-6 grid-rows-5 gap-4">
 
                     <div
