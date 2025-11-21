@@ -35,9 +35,9 @@ export default function Experience() {
     const [activeImage, setActiveImage] = useState(defaultImg);
 
     return (
-        <section id="work" className="bg-[#0d1117] px-10 pb-20">
+        <section id="work" className="bg-[#0d1117] px-4 md:px-10 pb-10 md:pb-20">
             <motion.h1
-                className="font-inter text-5xl mb-10 text-center font-bold text-white z-10"
+                className="font-inter text-3xl md:text-5xl mb-10 text-center font-bold text-white z-10"
                 initial={{ opacity: 0, y: 80, scale: 0.85 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
@@ -46,8 +46,7 @@ export default function Experience() {
                 Professional <span className="text-[#caa9d3]">Experience</span>
             </motion.h1>
 
-            <div className="lg:flex  mx-44   gap-10">
-
+            <div className="lg:flex  md:mx-44   gap-10">
 
                 <div className="relative w-full lg:w-[420px] h-[400px] bg-[#0d1117] rounded-2xl flex items-start justify-end">
 
@@ -63,7 +62,7 @@ export default function Experience() {
                     <a href="https://www.linkedin.com/in/saurabhshisode" target="_blank" rel="noopener noreferrer">
                     <img
                         src={activeImage}
-                        className="w-65 h-95 transition-all duration-500 mt-4 mr-4"
+                        className="w-65 h-95 transition-all duration-500 md:mt-4 md:mr-4"
                         alt="preview"
                     />
                     </a>
@@ -77,7 +76,7 @@ export default function Experience() {
                     {experiences.map((exp, i) => (
                         <div
                             key={i}
-                            className="p-4 group transition-all duration-300 hover:bg-[#1a2330] rounded-lg cursor-pointer"
+                            className="p-2 md:p-4 group transition-all duration-300 hover:bg-[#1a2330] rounded-lg cursor-pointer"
                             onMouseEnter={() => setActiveImage(exp.preview)}
                             onMouseLeave={() => setActiveImage(defaultImg)}
                         >
