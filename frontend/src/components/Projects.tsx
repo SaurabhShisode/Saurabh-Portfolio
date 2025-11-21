@@ -65,7 +65,7 @@ export default function Projects() {
     ];
 
     return (
-        <section id="projects" className="bg-[#0d1117] text-white pb-20">
+        <section id="projects" className="bg-[#0d1117] text-white pb-10 md:pb-20">
             <motion.div
                 initial={{ opacity: 0, y: 100, scale: 0.9 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
@@ -73,12 +73,12 @@ export default function Projects() {
                 viewport={{ once: true, amount: 0.01 }}
             >
             <h1
-                className="text-center text-5xl font-inter font-bold mb-10"
+                className="text-center text-3xl md:text-5xl font-inter font-bold mb-10"
             >
                 Featured <span className="text-[#caa9d3]">Projects</span>
             </ h1>
 
-            <div className="relative overflow-y-none mx-44 px-10">
+            <div className="relative overflow-y-none md:mx-44 px-4 md:px-10">
 
 
                 <div
@@ -89,9 +89,9 @@ export default function Projects() {
                     {projects.map((project, i) => (
                         <div
                             key={i}
-                            className="bg-[#121924] border border-[#2d384d] rounded-2xl p-6 flex justify-between hover:bg-[#1a2330] transition-all duration-300 font-inter overflow-hidden relative group "
+                            className="bg-[#121924] border border-[#2d384d] rounded-2xl p-3 md:p-6 flex justify-between hover:bg-[#1a2330] transition-all duration-300 font-inter overflow-hidden relative group "
                         >
-                            <div className="max-w-[60%] pt-7">
+                            <div className="md:max-w-[60%] pt-3 md:pt-7">
                                 <h2 className="text-xl font-bold">{project.name}</h2>
                                 <p className="text-xs text-gray-500 mt-1">{project.timeline}</p>
 
@@ -113,7 +113,7 @@ export default function Projects() {
                                         <a
                                             href={project.live}
                                             target="_blank"
-                                            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-[#1f2937] hover:bg-white hover:text-black transition-all duration-300"
+                                            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-[#1f2937] hover:bg-white hover:text-black transition-all duration-300 text-sm md:text-base"
                                         >
                                             <ExternalLink size={16} /> Live
                                         </a>
@@ -123,7 +123,7 @@ export default function Projects() {
                                         <a
                                             href={project.github}
                                             target="_blank"
-                                            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-[#1f2937] hover:bg-white hover:text-black transition-all duration-300"
+                                            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-[#1f2937] hover:bg-white hover:text-black transition-all duration-300 text-sm md:text-base"
                                         >
                                             <Github size={16} /> Code
                                         </a>
@@ -140,7 +140,7 @@ export default function Projects() {
                                     <img
                                         src={project.image}
                                         alt={project.name}
-                                        className="relative right-0 -bottom-6 translate-x-1/5 group-hover:translate-x-10 transition-transform duration-600 ease-in-out rounded-tl-2xl group-hover:scale-104 w-120"
+                                        className="relative right-0 -bottom-6 translate-x-1/5 group-hover:translate-x-10 transition-transform duration-600 ease-in-out rounded-tl-2xl group-hover:scale-104 w-120 hidden md:block"
                                     />
                                 </a>
                             )}
