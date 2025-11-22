@@ -59,9 +59,9 @@ export default function About() {
                                 <img
                                     src={t.img}
                                     alt={t.name}
-                                    className="w-10 h-10 object-contain grayscale invert opacity-60 transition-all duration-300 group-hover:grayscale-0 group-hover:opacity-100"
+                                    className="w-10 h-10 object-contain grayscale invert opacity-60 transition-all duration-300 md:group-hover:grayscale-0 md:group-hover:opacity-100"
                                 />
-                                <span className="text-gray-400 font-poppins text-lg whitespace-nowrap transition-all duration-300 group-hover:text-white">
+                                <span className="text-gray-400 font-poppins text-lg whitespace-nowrap transition-all duration-300 md:group-hover:text-white">
                                     {t.name}
                                 </span>
                             </div>
@@ -92,7 +92,7 @@ export default function About() {
       bg-cover bg-center bg-no-repeat group overflow-hidden 
     "
                     >
-                        <h1 className="font-inter text-base md:text-lg lg:text-2xl font-bold p-4 md:p-9 mr-18 group-hover:ml-3 transition-all duration-300 ease-in-out">
+                        <h1 className="font-inter text-base md:text-lg lg:text-2xl font-bold p-4 md:p-9 mr-18 md:group-hover:ml-3 transition-all duration-300 ease-in-out">
                             I create software that turns ideas into scalable products
                         </h1>
 
@@ -100,7 +100,7 @@ export default function About() {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 w-full md:min-w-xl max-w-3xl mx-auto px-6 translate-x-[40px] 
                             translate-y-[6px] 
                             md:translate-x-[120px] 
-                            md:translate-y-0 group-hover:translate-x-0 transition-all duration-600 ease-in-out mb-4 md:mb-0 gr">
+                            md:translate-y-0 md:group-hover:translate-x-0 transition-all duration-600 ease-in-out mb-4 md:mb-0 gr">
 
                                 {(window.innerWidth < 768 ? repos.slice(0, 3) : repos).map((repo, i) => (
                                     <div
@@ -137,15 +137,15 @@ export default function About() {
     md:row-span-3 md:col-start-4 
     bg-[#121924] border border-[#1f2b3f] rounded-2xl relative group overflow-hidden 
   ">
-                        <h1 className="font-inter text-base  md:text-base lg:text-2xl font-bold p-4 md:p-9 lg:mr-18 group-hover:ml-3 transition-all duration-300 ease-in-out text-white leading-snug relative z-10">
+                        <h1 className="font-inter text-base  md:text-base lg:text-2xl font-bold p-4 md:p-9 lg:mr-18 md:group-hover:ml-3 transition-all duration-300 ease-in-out text-white leading-snug relative z-10">
                             My expertise include
                             <span className="block">Web, AI & Backend</span>
                         </h1>
 
                         <div
                             className="absolute -bottom-2 -right-3 w-[90%] h-[55%] bg-[#0d1117dd] backdrop-blur-md rounded-tl-2xl border border-[#2d384d] p-4 font-mono text-sm 
-                            md:translate-x-6  lg:translate-y-10 group-hover:translate-x-1 group-hover:translate-y-2 
-                            md:group-hover:-translate-y-1 transition-all duration-700 ease-[cubic-bezier(.22,.68,0,1.21)]"
+                            md:translate-x-6  lg:translate-y-10 md:group-hover:translate-x-1 md:group-hover:translate-y-2 
+                            md:md:group-hover:-translate-y-1 transition-all duration-700 ease-[cubic-bezier(.22,.68,0,1.21)]"
                         >
                             <div className="text-xs text-gray-500 mb-2 flex gap-2">
                                 <span className="w-3 h-3 bg-red-500 rounded-full"></span>
@@ -163,7 +163,7 @@ export default function About() {
                                 {`}`} );
                             </code>
 
-                            <code className="text-gray-300 opacity-100 translate-y-4 transition-all group-hover:translate-y-0 block">
+                            <code className="text-gray-300 opacity-100 translate-y-4 transition-all md:group-hover:translate-y-0 block">
                                 <br />
                                 <span className="text-gray-500">// Middleware example</span><br />
                                 <span className="text-pink-400">app</span>.<span className="text-blue-400">use</span>
@@ -190,15 +190,15 @@ export default function About() {
     md:row-span-3 md:col-start-4 md:row-start-4 
     bg-[#121924] border border-[#1f2b3f] rounded-2xl md:p-4 group overflow-hidden 
   ">
-                        <h1 className="font-inter text-base md:text-base lg:text-2xl font-bold p-3 md:p-5 mr-18 leading-relaxed group-hover:ml-3 transition-all duration-300 ease-in-out">
+                        <h1 className="font-inter text-base md:text-base lg:text-2xl font-bold p-3 md:p-5 mr-18 leading-relaxed md:group-hover:ml-3 transition-all duration-300 ease-in-out">
                             <span className="text-sm font-light block">I build products<span className="md:block">with optimised</span></span>
                             <span className="block">tech stacks</span>
                         </h1>
 
                         <div
                             className="absolute -bottom-2 -right-3 w-[90%] h-[55%] bg-[#0d1117dd] backdrop-blur-md rounded-tl-2xl border border-[#2d384d] p-4 font-mono text-sm 
-                            md:translate-x-6  lg:translate-y-10 group-hover:translate-x-1 group-hover:translate-y-2 
-                            md:group-hover:-translate-y-1 transition-all duration-700 ease-[cubic-bezier(.22,.68,0,1.21)]"
+                            md:translate-x-6  lg:translate-y-10 md:group-hover:translate-x-1 md:group-hover:translate-y-2 
+                            md:md:group-hover:-translate-y-1 transition-all duration-700 ease-[cubic-bezier(.22,.68,0,1.21)]"
                         >
                             <div className="w-full h-2 bg-[#2d384d] rounded-full overflow-hidden flex mb-3">
                                 <div className="bg-purple-500 w-[59.2%]"></div>
@@ -227,7 +227,7 @@ export default function About() {
     md:row-span-3 md:row-start-7 
     bg-[#121924] border border-[#1f2b3f] rounded-2xl md:p-4 overflow-hidden group 
   ">
-                        <h1 className="font-inter text-base lg:text-2xl font-bold p-3 md:p-5  lg:mr-20 group-hover:ml-3 transition-all duration-300 ease-in-out z-10 relative group-hover:opacity-0">
+                        <h1 className="font-inter text-base lg:text-2xl font-bold p-3 md:p-5  lg:mr-20 md:group-hover:ml-3 transition-all duration-300 ease-in-out z-10 relative md:group-hover:opacity-0">
                             A curious developer obsessed  
                             <span className="block md:inline"> with problem solving</span>
                             <span className="block">and user</span>
@@ -244,11 +244,11 @@ export default function About() {
     object-contain opacity-90 
     transition-all duration-700 ease-in-out
     
-    group-hover:bottom-1/2 
-    group-hover:right-1/2 
-    group-hover:translate-x-1/2 
-    group-hover:translate-y-1/2 
-    group-hover:scale-120
+    md:group-hover:bottom-1/2 
+    md:group-hover:right-1/2 
+    md:group-hover:translate-x-1/2 
+    md:group-hover:translate-y-1/2 
+    md:group-hover:scale-120
   "
 />
 
@@ -287,7 +287,7 @@ export default function About() {
     md:row-span-6 md:col-start-3 md:row-start-7 
     bg-[#121924] border border-[#1f2b3f] rounded-2xl md:p-4 group overflow-hidden relative
   ">
-                        <h1 className="font-inter text-base lg:text-2xl font-bold p-3 lg:mr-20 group-hover:ml-3 transition-all duration-300 ease-in-out">
+                        <h1 className="font-inter text-base lg:text-2xl font-bold p-3 lg:mr-20 md:group-hover:ml-3 transition-all duration-300 ease-in-out">
                             <span className="hidden md:block">
                             <span className="mb-1 md:mb-3 text-xs md:text-sm font-light block">The Insider</span>
                             Solving real-world algorithmic challenges to sharpen problem-solving and system thinking
@@ -307,14 +307,14 @@ export default function About() {
                                 className="relative right-0 bottom-0 object-contain translate-x-50 -translate-y-25 
                                 md:translate-x-40 md:translate-y-35 
                                 md:scale-140
-                                md:group-hover:translate-x-35 
-                                md:group-hover:translate-y-28
-                                md:group-hover:scale-145  
-                                lg:translate-x-1/5 lg:translate-y-14 
+                                md:md:group-hover:translate-x-35 
+                                md:md:group-hover:translate-y-28
+                                md:md:group-hover:scale-145  
+                                lg:translate-x-1/5 lg:translate-y-18 
                                 lg:scale-100
-                                lg:group-hover:translate-x-23 
-                                lg:group-hover:translate-y-12 
-                                lg:group-hover:scale-104 transition-transform duration-600 ease-in-out rounded-2xl "
+                                lg:md:group-hover:translate-x-23 
+                                lg:md:group-hover:translate-y-15 
+                                lg:md:group-hover:scale-104 transition-transform duration-600 ease-in-out rounded-2xl "
                             />
                         </a>
                     </div>
