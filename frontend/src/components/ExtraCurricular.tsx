@@ -34,8 +34,8 @@ export default function ExtraCurricular() {
                             <h2 className=" text-3xl md:text-4xl lg:text-6xl font-bold font-grotesk">Volleyball</h2>
 
                             <p
-                                className="text-gray-300 text-sm leading-relaxed opacity-0 
-      -translate-x-10 group-hover:opacity-100 group-hover:translate-x-2
+                                className="text-gray-300 text-sm leading-relaxed md:opacity-0 
+      md:-translate-x-10 md:group-hover:opacity-100 md:group-hover:translate-x-2
       transition-all duration-500 ease-out font-inter text-left"
                             >
                                 Aarambh ‘22 Volleyball runner-up.
@@ -60,8 +60,8 @@ export default function ExtraCurricular() {
                             <h2 className=" text-3xl md:text-4xl lg:text-6xl font-bold font-grotesk">Gaming</h2>
 
                             <p
-                                className="text-gray-300 text-sm leading-relaxed opacity-0 
-      -translate-x-10 group-hover:opacity-100 group-hover:translate-x-2
+                                className="text-gray-300 text-sm leading-relaxed md:opacity-0 
+      md:-translate-x-10 md:group-hover:opacity-100 md:group-hover:translate-x-2
       transition-all duration-500 ease-out font-inter text-left"
                             >
                                 Mail me your Valorant ID.
@@ -85,8 +85,8 @@ export default function ExtraCurricular() {
                             <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold font-grotesk mb-2">Video Editing</h2>
 
                             <p
-                                className="text-gray-300 text-sm leading-relaxed opacity-0 
-      translate-y-10 group-hover:opacity-100 group-hover:translate-y-2
+                                className="text-gray-300 text-sm leading-relaxed md:opacity-0 
+      md:translate-y-10 md:group-hover:opacity-100 md:group-hover:translate-y-2
       transition-all duration-500 ease-out font-inter"
                             >
                                 Oversaw media production for D2C Igniters Club, as Media & Photography Co-Lead.
