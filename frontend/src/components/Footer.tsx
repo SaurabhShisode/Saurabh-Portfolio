@@ -8,12 +8,12 @@ export default function Footer() {
     <footer className="relative bg-[#0d1117] text-white py-16 font-inter overflow-hidden">
 
       <div
-  className="absolute h-[400px] w-[1600px] bottom-0 left-1/2 -translate-x-1/2 bg-blue-500/20 pointer-events-none"
-  style={{
-    maskImage: "radial-gradient(50% 50% at bottom center, black, transparent)",
-    WebkitMaskImage: "radial-gradient(50% 50% at bottom center, black, transparent)",
-  }}
-></div>
+        className="absolute h-[400px] w-[1600px] bottom-0 left-1/2 -translate-x-1/2 bg-blue-500/20 pointer-events-none"
+        style={{
+          maskImage: "radial-gradient(50% 50% at bottom center, black, transparent)",
+          WebkitMaskImage: "radial-gradient(50% 50% at bottom center, black, transparent)",
+        }}
+      ></div>
 
 
 
