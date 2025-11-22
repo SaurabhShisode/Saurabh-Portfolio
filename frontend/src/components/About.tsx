@@ -287,7 +287,7 @@ export default function About() {
     md:row-span-6 md:col-start-3 md:row-start-7 
     bg-[#121924] border border-[#1f2b3f] rounded-2xl md:p-4 group overflow-hidden relative
   ">
-                        <h1 className="font-inter text-base lg:text-2xl font-bold p-3 md:p-4 lg:mr-20 group-hover:ml-3 transition-all duration-300 ease-in-out">
+                        <h1 className="font-inter text-base lg:text-2xl font-bold p-3 lg:mr-20 group-hover:ml-3 transition-all duration-300 ease-in-out">
                             <span className="hidden md:block">
                             <span className="mb-1 md:mb-3 text-xs md:text-sm font-light block">The Insider</span>
                             Solving real-world algorithmic challenges to sharpen problem-solving and system thinking
