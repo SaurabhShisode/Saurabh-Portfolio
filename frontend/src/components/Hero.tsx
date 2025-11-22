@@ -140,7 +140,7 @@ export default function Hero() {
     w-[500px] md:w-124 lg:w-140 
     drop-shadow-xl
     md:translate-y-12 lg:translate-y-0
-    lg:scale-100 lg:top-0 lg:right-20
+    lg:scale-130 lg:top-0 lg:right-20
   "
           />
 
