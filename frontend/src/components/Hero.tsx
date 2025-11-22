@@ -42,7 +42,7 @@ export default function Hero() {
   ];
 
   return (
-    <section className="relative min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-8 pt-24 bg-gradient-to-b from-[#cdd4e7] to-[#1c48a8] overflow-hidden">
+    <section className="relative min-h-[100dvh] flex flex-col md:flex-row items-center justify-between px-6 md:px-8 pt-24 bg-gradient-to-b from-[#cdd4e7] to-[#1c48a8] overflow-hidden">
 
       <div className="relative z-10 space-y-4 
         flex flex-col lg:flex-row 

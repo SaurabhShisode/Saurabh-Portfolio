@@ -47,7 +47,7 @@ export default function About() {
         setTimeout(() => setCopied(false), 2000);
     };
     return (
-        <section id="about" className="bg-[#0d1117] text-white py-10  min-h-screen md:mb-10">
+        <section id="about" className="bg-[#0d1117] text-white py-10  min-h-[100dvh] md:mb-10">
             <div className="pb-10 ">
                 <div className="overflow-hidden">
                     <div
@@ -55,7 +55,7 @@ export default function About() {
         flex gap-16 animate-marquee whitespace-nowrap"
                     >
                         {items.map((t, i) => (
-                            <div key={i} className="flex items-center gap-4 flex-none group">
+                            <div key={i} className="flex items-center gap-4 flex-none md:group">
                                 <img
                                     src={t.img}
                                     alt={t.name}
@@ -89,7 +89,7 @@ export default function About() {
       bg-[#121924] border border-[#1f2b3f] rounded-2xl 
        md:p-0 
       col-span-1 md:col-span-3 md:row-span-6 
-      bg-cover bg-center bg-no-repeat group overflow-hidden 
+      bg-cover bg-center bg-no-repeat md:group overflow-hidden 
     "
                     >
                         <h1 className="font-inter text-base md:text-lg lg:text-2xl font-bold p-4 md:p-9 mr-18 group-hover:ml-3 transition-all duration-300 ease-in-out">
@@ -135,7 +135,7 @@ export default function About() {
                     <div className="
     col-span-1 md:col-span-2 
     md:row-span-3 md:col-start-4 
-    bg-[#121924] border border-[#1f2b3f] rounded-2xl relative group overflow-hidden 
+    bg-[#121924] border border-[#1f2b3f] rounded-2xl relative md:group overflow-hidden 
   ">
                         <h1 className="font-inter text-base  md:text-base lg:text-2xl font-bold p-4 md:p-9 lg:mr-18 group-hover:ml-3 transition-all duration-300 ease-in-out text-white leading-snug relative z-10">
                             My expertise include
@@ -188,7 +188,7 @@ export default function About() {
     relative 
     col-span-1 md:col-span-2 
     md:row-span-3 md:col-start-4 md:row-start-4 
-    bg-[#121924] border border-[#1f2b3f] rounded-2xl md:p-4 group overflow-hidden 
+    bg-[#121924] border border-[#1f2b3f] rounded-2xl md:p-4 md:group overflow-hidden 
   ">
                         <h1 className="font-inter text-base md:text-base lg:text-2xl font-bold p-3 md:p-5 mr-18 leading-relaxed group-hover:ml-3 transition-all duration-300 ease-in-out">
                             <span className="text-sm font-light block">I build products<span className="md:block">with optimised</span></span>
@@ -225,7 +225,7 @@ export default function About() {
     relative 
     col-span-1 md:col-span-2 
     md:row-span-3 md:row-start-7 
-    bg-[#121924] border border-[#1f2b3f] rounded-2xl md:p-4 overflow-hidden group 
+    bg-[#121924] border border-[#1f2b3f] rounded-2xl md:p-4 overflow-hidden md:group 
   ">
                         <h1 className="font-inter text-base lg:text-2xl font-bold p-3 md:p-5  lg:mr-20 group-hover:ml-3 transition-all duration-300 ease-in-out z-10 relative group-hover:opacity-0">
                             A curious developer obsessed  
@@ -285,7 +285,7 @@ export default function About() {
                     <div className="
     col-span-1 md:col-span-3 
     md:row-span-6 md:col-start-3 md:row-start-7 
-    bg-[#121924] border border-[#1f2b3f] rounded-2xl md:p-4 group overflow-hidden relative
+    bg-[#121924] border border-[#1f2b3f] rounded-2xl md:p-4 md:group overflow-hidden relative
   ">
                         <h1 className="font-inter text-base lg:text-2xl font-bold p-3 lg:mr-20 group-hover:ml-3 transition-all duration-300 ease-in-out">
                             <span className="hidden md:block">
