@@ -29,7 +29,7 @@ export default function App() {
   }, [])
 
   return (
-    <div className="bg-[#0d1117] dark m-0 p-0">
+    <div className="bg-[#0d1117] m-0 p-0 h-min ">
       <Navbar />
       <Hero />
       <About />
