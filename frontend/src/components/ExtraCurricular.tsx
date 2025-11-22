@@ -8,7 +8,7 @@ export default function ExtraCurricular() {
         <section className="bg-[#0d1117] text-white pb-10 md:pb-20 font-inter">
 
             <motion.h1
-                className="text-center text-3xl md:text-4xl font-bold mb-10"
+                className="text-center text-3xl lg:text-4xl font-bold mb-10"
                 initial={{ opacity: 0, y: 80, scale: 0.85 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
@@ -17,7 +17,7 @@ export default function ExtraCurricular() {
                 Beyond <span className="text-[#caa9d3]">Studies</span>
             </motion.h1>
 
-            <div className="mx-4 md:mx-54">
+            <div className="px-4 md:px-10 lg:px-54">
                 <div className="grid grid-cols-6 grid-rows-5 gap-4">
 
                     <div
@@ -31,7 +31,7 @@ export default function ExtraCurricular() {
 
 
                         <div className="md:ml-28 flex flex-col  gap-3 z-10 md:text-left">
-                            <h2 className=" text-3xl md:text-6xl font-bold font-grotesk">Volleyball</h2>
+                            <h2 className=" text-3xl md:text-4xl lg:text-6xl font-bold font-grotesk">Volleyball</h2>
 
                             <p
                                 className="text-gray-300 text-sm leading-relaxed opacity-0 
@@ -56,15 +56,15 @@ export default function ExtraCurricular() {
                         />
 
                         
-                        <div className="md:mr-24 flex flex-col md:text-right gap-3 z-20">
-                            <h2 className=" text-3xl md:text-6xl font-bold font-grotesk">Gaming</h2>
+                        <div className="md:mr-24 flex flex-col  gap-3 z-20">
+                            <h2 className=" text-3xl md:text-4xl lg:text-6xl font-bold font-grotesk">Gaming</h2>
 
                             <p
                                 className="text-gray-300 text-sm leading-relaxed opacity-0 
       -translate-x-10 group-hover:opacity-100 group-hover:translate-x-2
       transition-all duration-500 ease-out font-inter text-left"
                             >
-                                Mail me your Valorant ID.
+                                Mail me your Valorant ID or take mine - 
                             </p>
                         </div>
                     </div>
@@ -82,7 +82,7 @@ export default function ExtraCurricular() {
 
                      
                         <div className="flex flex-col text-center gap-3">
-                            <h2 className="text-3xl md:text-6xl font-bold font-grotesk mb-2">Video Editing</h2>
+                            <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold font-grotesk mb-2">Video Editing</h2>
 
                             <p
                                 className="text-gray-300 text-sm leading-relaxed opacity-0 

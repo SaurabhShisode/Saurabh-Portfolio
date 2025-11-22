@@ -55,7 +55,7 @@ export default function Testimonials() {
                 <div className="absolute -translate-y-1 md:-translate-y-0 top-0 w-full h-20 bg-gradient-to-b from-[#0d1117] to-transparent z-20"></div>
                 <div className="absolute translate-y-1 md:translate-y-0 bottom-0  w-full h-20 bg-gradient-to-t from-[#0d1117] to-transparent z-20"></div>
 
-                <div className="grid grid-cols-3 gap-5 md:gap-10 px-4 md:px-54 absolute">
+                <div className="grid grid-cols-3 gap-5 md:gap-10 px-4 md:px-10 lg:px-54 absolute">
 
  
                     <div className="relative ">
@@ -71,7 +71,7 @@ export default function Testimonials() {
              animate-floating
              rotate-[0deg] hover:rotate-[-1deg] group"
                                 >
-                                    <p className="text-gray-300 leading-relaxed font-inter text-[13px] md:text-lg tracking-wide">
+                                    <p className="text-gray-300 leading-relaxed font-inter text-[11px] md:text-[13px] lg:text-lg tracking-wide">
                                         {t}
                                     </p>
                                     
@@ -95,7 +95,7 @@ export default function Testimonials() {
              animate-floating
              rotate-[0deg] hover:rotate-[-1deg]"
                                 >
-                                    <p className="text-gray-300 leading-relaxed font-inter text-[13px] md:text-lg tracking-wide">
+                                    <p className="text-gray-300 leading-relaxed font-inter text-[11px] md:text-[13px] lg:text-lg tracking-wide">
                                         {t}
                                     </p>
                                 </div>
@@ -117,7 +117,7 @@ export default function Testimonials() {
              animate-floating
              rotate-[0deg] hover:rotate-[-1deg]"
                                 >
-                                    <p className="text-gray-300 leading-relaxed font-inter text-[13px] md:text-lg tracking-wide">
+                                    <p className="text-gray-300 leading-relaxed font-inter text-[11px] md:text-[13px] lg:text-lg tracking-wide">
                                         {t}
                                     </p>
                                 </div>

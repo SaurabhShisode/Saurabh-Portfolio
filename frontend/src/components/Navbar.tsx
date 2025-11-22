@@ -40,7 +40,7 @@ export default function Navbar() {
       <h1 className="text-xl tracking-tight font-grotesk">Saurabh<span className="text-gray-500">
         _Commits</span></h1>
 
-      <ul className="hidden md:flex gap-8 text-base font-poppins">
+      <ul className="hidden md:flex gap-8 text-base md:text-sm  lg:text-base font-poppins">
         <li className="hover:bg-white p-2 rounded-lg hover:text-[#0d1117] transition-all duration-300 ease-in-out">
           <a href="#about">About</a>
         </li>

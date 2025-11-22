@@ -73,12 +73,12 @@ export default function Projects() {
                 viewport={{ once: true, amount: 0.01 }}
             >
             <h1
-                className="text-center text-3xl md:text-4xl font-inter font-bold mb-10"
+                className="text-center text-3xl lg:text-4xl font-inter font-bold mb-10"
             >
                 Featured <span className="text-[#caa9d3]">Projects</span>
             </ h1>
 
-            <div className="relative overflow-y-none md:mx-24 px-4 md:px-10">
+            <div className="relative overflow-y-none lg:mx-24 px-4 md:px-10">
 
 
                 <div
@@ -91,7 +91,7 @@ export default function Projects() {
                             key={i}
                             className="bg-[#121924] border border-[#2d384d] rounded-2xl p-3 md:p-6 flex justify-between hover:bg-[#1a2330] transition-all duration-300 font-inter overflow-hidden relative group "
                         >
-                            <div className="md:max-w-[60%] pt-3 md:pt-7">
+                            <div className="max-w-full lg:max-w-[60%] md:pt-3 lg:pt-7">
                                 <h2 className="text-lg font-bold">{project.name}</h2>
                                 <p className="text-xs text-gray-500 mt-1">{project.timeline}</p>
 
@@ -101,7 +101,7 @@ export default function Projects() {
                                     {project.tech.map((t, index) => (
                                         <span
                                             key={index}
-                                            className="text-xs bg-[#0d1117] border border-[#2d384d] px-2 py-1 rounded-md"
+                                            className="text-[8px]  lg:text-[12px] bg-[#0d1117] border border-[#2d384d] px-2 py-1 rounded-md"
                                         >
                                             {t}
                                         </span>
@@ -140,8 +140,17 @@ export default function Projects() {
                                     <img
                                         src={project.image}
                                         alt={project.name}
-                                        className="relative right-0 bottom-0 translate-x-1/5 
-                                        translate-y-1/5 group-hover:translate-x-10 translate-y-1/6 transition-transform duration-600 ease-in-out rounded-tl-2xl group-hover:scale-104 w-120 hidden md:block"
+                                        className="relative right-0 bottom-0 lg:translate-x-1/5 
+                                        lg:translate-y-1/5 lg:group-hover:translate-x-10 
+                                        lg:translate-y-1/6 transition-transform duration-600 ease-in-out rounded-tl-2xl lg:group-hover:scale-104 lg:w-120 hidden md:block
+                                        lg:group-hover:translate-y-1/6
+                                        w-320
+                                        translate-x-30
+                                        translate-y-30
+                                        group-hover:scale-104 
+                                        group-hover:translate-x-10 
+                                        group-hover:translate-y-25 
+                                        "
                                     />
                                 </a>
                             )}

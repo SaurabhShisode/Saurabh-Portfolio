@@ -17,7 +17,7 @@ export default function ContactSection({ state, handleSubmit }: ContactProps) {
     <section id="contact" className="pb-20 bg-[#0d1117] text-white font-inter">
 
       <h1
-        className="text-center text-3xl md:text-4xl font-bold mb-4"
+        className="text-center text-3xl lg:text-4xl font-bold mb-4"
       >
         Get in <span className="text-[#caa9d3]">Touch</span>
       </h1>
@@ -26,7 +26,7 @@ export default function ContactSection({ state, handleSubmit }: ContactProps) {
         Have a question, an idea, or an opportunity? Feel free to reach out.
       </p>
 
-      <div className="max-w-3xl mx-4 md:mx-auto bg-[#121924] border border-[#2d384d] p-4 md:p-10 rounded-2xl shadow-xl">
+      <div className="max-w-3xl md:mx-10 mx-4 lg:mx-auto bg-[#121924] border border-[#2d384d] p-4 md:p-10 rounded-2xl shadow-xl">
         
         {state.succeeded ? (
           <div className="text-center text-lg md:text-2xl text-green-400 font-semibold">
@@ -88,7 +88,7 @@ export default function ContactSection({ state, handleSubmit }: ContactProps) {
               <button
                 type="submit"
                 disabled={state.submitting}
-                className="px-10 py-3 bg-[#caa9d3] text-black rounded-xl font-bold text-base md:text-lg hover:bg-white transition-all duration-300 cursor-pointer"
+                className=" px-4 lg:px-10 py-3 bg-[#caa9d3] text-black rounded-xl font-bold text-base md:text-lg hover:bg-white transition-all duration-300 cursor-pointer"
               >
                 {state.submitting ? "Sending..." : "Send Message"}
               </button>

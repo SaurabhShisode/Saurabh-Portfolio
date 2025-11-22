@@ -82,29 +82,30 @@ export default function About() {
 
 
 
-                <div className="grid grid-cols-1 md:grid-cols-5 md:grid-rows-12 gap-6 md:gap-8 px-4 md:px-10 md:mx-24 z-50 ">
+                <div className="grid grid-cols-1 grid-rows-6 md:grid-cols-5 md:grid-rows-12 gap-6 md:gap-8 px-4 md:px-10 lg:px-10 lg:mx-24 z-50 h-260 md:h-280 lg:h-310 ">
 
                     <div
                         className="
       bg-[#121924] border border-[#1f2b3f] rounded-2xl 
-       md:p-0 h-40 md:h-150 
+       md:p-0 
       col-span-1 md:col-span-3 md:row-span-6 
       bg-cover bg-center bg-no-repeat group overflow-hidden 
     "
                     >
-                        <h1 className="font-inter text-base md:text-2xl font-bold p-4 md:p-9 mr-18 group-hover:ml-3 transition-all duration-300 ease-in-out">
+                        <h1 className="font-inter text-base md:text-lg lg:text-2xl font-bold p-4 md:p-9 mr-18 group-hover:ml-3 transition-all duration-300 ease-in-out">
                             I create software that turns ideas into scalable products
                         </h1>
 
                         <div className="relative overflow-hidden w-full">
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 w-full max-w-3xl mx-auto px-6 translate-x-[40px] 
-                            translate-y-[6px] md:translate-x-[120px] 
-                            md:translate-y-0 group-hover:translate-x-0transition-all duration-600 ease-in-out mb-4 md:mb-0">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 w-full md:min-w-xl max-w-3xl mx-auto px-6 translate-x-[40px] 
+                            translate-y-[6px] 
+                            md:translate-x-[120px] 
+                            md:translate-y-0 group-hover:translate-x-0 transition-all duration-600 ease-in-out mb-4 md:mb-0 gr">
 
                                 {(window.innerWidth < 768 ? repos.slice(0, 3) : repos).map((repo, i) => (
                                     <div
                                         key={i}
-                                        className="border border-[#2d384d] bg-[#0d1117] rounded-xl p-4 md:p-5 flex flex-col gap-2 md:gap-3 hover:bg-[#111826] transition-all"
+                                        className="border border-[#2d384d] bg-[#0d1117] rounded-xl p-4 md:p-4 lg:p-5 flex flex-col gap-2 lg:gap-3 hover:bg-[#111826] transition-all"
                                     >
                                         <div className="flex justify-between items-center">
                                             <a className="text-[#2f81f7] font-medium text-base md:text-sm hover:underline"
@@ -119,8 +120,8 @@ export default function About() {
                                         </div>
 
                                         <div className="flex items-center gap-2">
-                                            <span className={`${repo.color} w-2 h-2 md:w-3 md:h-3 rounded-full`} />
-                                            <span className="text-xs md:text-sm text-gray-300 font-inter">{repo.language}</span>
+                                            <span className={`${repo.color} w-2 h-2 lg:w-3 lg:h-3 rounded-full`} />
+                                            <span className="text-xs md:text-xs lg:text-sm text-gray-300 font-inter">{repo.language}</span>
                                         </div>
                                     </div>
                                 ))}
@@ -134,15 +135,17 @@ export default function About() {
                     <div className="
     col-span-1 md:col-span-2 
     md:row-span-3 md:col-start-4 
-    bg-[#121924] border border-[#1f2b3f] rounded-2xl relative group overflow-hidden h-40 md:h-auto
+    bg-[#121924] border border-[#1f2b3f] rounded-2xl relative group overflow-hidden 
   ">
-                        <h1 className="font-inter text-base md:text-2xl font-bold p-4 md:p-9 md:mr-18 group-hover:ml-3 transition-all duration-300 ease-in-out text-white leading-snug relative z-10">
+                        <h1 className="font-inter text-base  md:text-base lg:text-2xl font-bold p-4 md:p-9 lg:mr-18 group-hover:ml-3 transition-all duration-300 ease-in-out text-white leading-snug relative z-10">
                             My expertise include
                             <span className="block">Web, AI & Backend</span>
                         </h1>
 
                         <div
-                            className="absolute -bottom-2 -right-3 w-[90%] h-[55%] bg-[#0d1117dd] backdrop-blur-md rounded-tl-2xl border border-[#2d384d] p-4 font-mono text-sm md:translate-x-6 md:translate-y-10 group-hover:translate-x-1 group-hover:translate-y-1 transition-all duration-700 ease-[cubic-bezier(.22,.68,0,1.21)]"
+                            className="absolute -bottom-2 -right-3 w-[90%] h-[55%] bg-[#0d1117dd] backdrop-blur-md rounded-tl-2xl border border-[#2d384d] p-4 font-mono text-sm 
+                            md:translate-x-6  lg:translate-y-10 group-hover:translate-x-1 group-hover:translate-y-2 
+                            md:group-hover:-translate-y-1 transition-all duration-700 ease-[cubic-bezier(.22,.68,0,1.21)]"
                         >
                             <div className="text-xs text-gray-500 mb-2 flex gap-2">
                                 <span className="w-3 h-3 bg-red-500 rounded-full"></span>
@@ -185,15 +188,17 @@ export default function About() {
     relative 
     col-span-1 md:col-span-2 
     md:row-span-3 md:col-start-4 md:row-start-4 
-    bg-[#121924] border border-[#1f2b3f] rounded-2xl md:p-4 group overflow-hidden h-40 md:h-auto
+    bg-[#121924] border border-[#1f2b3f] rounded-2xl md:p-4 group overflow-hidden 
   ">
-                        <h1 className="font-inter text-base md:text-2xl font-bold p-3 md:p-5 mr-18 leading-relaxed group-hover:ml-3 transition-all duration-300 ease-in-out">
+                        <h1 className="font-inter text-base md:text-base lg:text-2xl font-bold p-3 md:p-5 mr-18 leading-relaxed group-hover:ml-3 transition-all duration-300 ease-in-out">
                             <span className="text-sm font-light block">I build products<span className="md:block">with optimised</span></span>
                             <span className="block">tech stacks</span>
                         </h1>
 
                         <div
-                            className="absolute -bottom-2 -right-3 w-[90%] h-[55%] bg-[#0d1117dd] backdrop-blur-md rounded-tl-2xl border border-[#2d384d] p-4 font-inter text-sm md:translate-x-6 md:translate-y-10 group-hover:translate-x-1 group-hover:translate-y-1 transition-all duration-700 ease-[cubic-bezier(.22,.68,0,1.21)]"
+                            className="absolute -bottom-2 -right-3 w-[90%] h-[55%] bg-[#0d1117dd] backdrop-blur-md rounded-tl-2xl border border-[#2d384d] p-4 font-mono text-sm 
+                            md:translate-x-6  lg:translate-y-10 group-hover:translate-x-1 group-hover:translate-y-2 
+                            md:group-hover:-translate-y-1 transition-all duration-700 ease-[cubic-bezier(.22,.68,0,1.21)]"
                         >
                             <div className="w-full h-2 bg-[#2d384d] rounded-full overflow-hidden flex mb-3">
                                 <div className="bg-purple-500 w-[59.2%]"></div>
@@ -204,13 +209,13 @@ export default function About() {
                                 <div className="bg-blue-500 w-[1.65%]"></div>
                             </div>
 
-                            <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-xs text-gray-300 font-inter">
-                                <div className="flex items-center gap-2"><span className="w-3 h-3 bg-purple-500 rounded-full"></span>TypeScript 59.20%</div>
-                                <div className="flex items-center gap-2"><span className="w-3 h-3 bg-[#563d7c] rounded-full"></span>CSS 6.75%</div>
-                                <div className="flex items-center gap-2"><span className="w-3 h-3 bg-green-400 rounded-full"></span>JavaScript 18.07%</div>
-                                <div className="flex items-center gap-2"><span className="w-3 h-3 bg-[#b07219] rounded-full"></span>Java 6.27%</div>
-                                <div className="flex items-center gap-2"><span className="w-3 h-3 bg-[#e34c26] rounded-full"></span>HTML 8.06%</div>
-                                <div className="flex items-center gap-2"><span className="w-3 h-3 bg-blue-500 rounded-full"></span>Python 1.65%</div>
+                            <div className="grid grid-cols-2 lg:gap-x-4 gap-y-2 text-xs md:text-[10px] text-gray-300 font-inter">
+                                <div className="flex items-center gap-2"><span className="w-2 h-2 lg:w-3 lg:h-3 bg-purple-500 rounded-full"></span>TypeScript 59.20%</div>
+                                <div className="flex items-center gap-2"><span className="w-2 h-2 lg:w-3 lg:h-3 bg-[#563d7c] rounded-full"></span>CSS 6.75%</div>
+                                <div className="flex items-center gap-2"><span className="w-2 h-2 lg:w-3 lg:h-3 bg-green-400 rounded-full"></span>JavaScript 18.07%</div>
+                                <div className="flex items-center gap-2"><span className="w-2 h-2 lg:w-3 lg:h-3 bg-[#b07219] rounded-full"></span>Java 6.27%</div>
+                                <div className="flex items-center gap-2"><span className="w-2 h-2 lg:w-3 lg:h-3 bg-[#e34c26] rounded-full"></span>HTML 8.06%</div>
+                                <div className="flex items-center gap-2"><span className="w-2 h-2 lg:w-3 lg:h-3 bg-blue-500 rounded-full"></span>Python 1.65%</div>
                             </div>
                         </div>
                     </div>
@@ -220,9 +225,9 @@ export default function About() {
     relative 
     col-span-1 md:col-span-2 
     md:row-span-3 md:row-start-7 
-    bg-[#121924] border border-[#1f2b3f] rounded-2xl md:p-4 overflow-hidden group h-40 md:h-auto
+    bg-[#121924] border border-[#1f2b3f] rounded-2xl md:p-4 overflow-hidden group 
   ">
-                        <h1 className="font-inter text-base md:text-2xl font-bold p-3 md:p-5  md:mr-20 group-hover:ml-3 transition-all duration-300 ease-in-out z-10 relative group-hover:opacity-0">
+                        <h1 className="font-inter text-base lg:text-2xl font-bold p-3 md:p-5  lg:mr-20 group-hover:ml-3 transition-all duration-300 ease-in-out z-10 relative group-hover:opacity-0">
                             A curious developer obsessed  
                             <span className="block md:inline"> with problem solving</span>
                             <span className="block">and user</span>
@@ -233,8 +238,9 @@ export default function About() {
   src={badge}
   alt="gif"
   className="
-    absolute w-28 bottom-6 right-4 
-    md:w-44 md:bottom-15 md:right-0
+    absolute w-24 bottom-10 right-0 
+    md:w-28 md:right-4
+    lg:w-44 lg:bottom-15 lg:right-0
     object-contain opacity-90 
     transition-all duration-700 ease-in-out
     
@@ -252,24 +258,24 @@ export default function About() {
     relative 
     col-span-1 md:col-span-2 
     md:row-span-3 
-    border border-[#1f2b3f] rounded-2xl overflow-hidden h-40 md:h-auto
+    border border-[#1f2b3f] rounded-2xl overflow-hidden 
   ">
                         <div className="absolute inset-0 z-0">
                             <BackgroundGradientAnimation className="h-full w-full" containerClassName="h-full w-full" />
                         </div>
 
                         <div className="relative z-10 flex flex-col items-center justify-center text-center px-8 py-16 h-full ">
-                            <h1 className="font-inter text-base md:text-2xl font-bold text-white drop-shadow-md font-inter">
+                            <h1 className="font-inter text-base lg:text-2xl font-bold text-white drop-shadow-md font-inter">
                                 Have an idea? Tell Me
                                 <span className="block">About It!</span>
                             </h1>
 
                             <button
                                 onClick={handleCopy}
-                                className="mt-2 md:mt-8 px-6 py-3 rounded-xl bg-[#0f111a]/80 border border-white/20 text-white flex items-center gap-2 hover:bg-[#1a1f2e] transition-all duration-300 cursor-pointer font-inter  text-sm md:text-base"
+                                className="mt-2 md:mt-8 px-6 py-3 rounded-xl bg-[#0f111a]/80 border border-white/20 text-white flex items-center gap-2 hover:bg-[#1a1f2e] transition-all duration-300 cursor-pointer font-inter  text-sm md:text-[10px] lg:text-base"
                             >   
-                            <ClipboardCopy size={15} className="block md:hidden" />
-                                <ClipboardCopy size={18} className="hidden md:block" />
+                            <ClipboardCopy size={15} className="block lg:hidden" />
+                                <ClipboardCopy size={18} className="hidden lg:block" />
                                 {copied ? "Email copied!" : "Copy my email address"}
                             </button>
                         </div>
@@ -279,9 +285,9 @@ export default function About() {
                     <div className="
     col-span-1 md:col-span-3 
     md:row-span-6 md:col-start-3 md:row-start-7 
-    bg-[#121924] border border-[#1f2b3f] rounded-2xl md:p-4 group overflow-hidden relative h-40 md:h-150
+    bg-[#121924] border border-[#1f2b3f] rounded-2xl md:p-4 group overflow-hidden relative
   ">
-                        <h1 className="font-inter text-base md:text-2xl font-bold p-3 md:p-5 mr-20 group-hover:ml-3 transition-all duration-300 ease-in-out">
+                        <h1 className="font-inter text-base lg:text-2xl font-bold p-3 md:p-4 lg:mr-20 group-hover:ml-3 transition-all duration-300 ease-in-out">
                             <span className="hidden md:block">
                             <span className="mb-1 md:mb-3 text-xs md:text-sm font-light block">The Insider</span>
                             Solving real-world algorithmic challenges to sharpen problem-solving and system thinking
@@ -299,9 +305,16 @@ export default function About() {
                                 src={leetcode}
                                 alt="LeetCode"
                                 className="relative right-0 bottom-0 object-contain translate-x-50 -translate-y-25 
-                                md:translate-x-1/5 md:translate-y-13 
-                                group-hover:translate-x-23 
-                                group-hover:translate-y-11 transition-transform duration-600 ease-in-out rounded-2xl group-hover:scale-104"
+                                md:translate-x-40 md:translate-y-35 
+                                md:scale-140
+                                md:group-hover:translate-x-35 
+                                md:group-hover:translate-y-28
+                                md:group-hover:scale-145  
+                                lg:translate-x-1/5 lg:translate-y-14 
+                                lg:scale-100
+                                lg:group-hover:translate-x-23 
+                                lg:group-hover:translate-y-12 
+                                lg:group-hover:scale-104 transition-transform duration-600 ease-in-out rounded-2xl "
                             />
                         </a>
                     </div>

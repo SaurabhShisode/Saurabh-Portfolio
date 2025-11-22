@@ -32,7 +32,7 @@ const item = {
 
 export default function Hero() {
   const gradientClass =
-    "bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text text-3xl md:text-5xl";
+    "bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text text-3xl md:text-4xl lg:text-5xl";
 
   const words = [
     { text: "Hi,", className: `${gradientClass} font-inter` },
@@ -45,7 +45,7 @@ export default function Hero() {
     <section className="relative min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-8 pt-24 bg-gradient-to-b from-[#cdd4e7] to-[#1c48a8] overflow-hidden">
 
       <div className="relative z-10 space-y-4 
-        flex flex-col md:flex-row 
+        flex flex-col lg:flex-row 
         items-center  
         justify-between
         gap-10 md:gap-6 
@@ -55,9 +55,9 @@ export default function Hero() {
 
         <motion.div
           className="space-y-4 
-            md:min-w-lg 
-            text-center md:text-left
-            md:ml-auto mt-10 md:mt-0"
+            lg:min-w-lg 
+            text-center lg:text-left
+            lg:ml-auto mt-10 md:mt-0"
           variants={container}
           initial="hidden"
           animate="show"
@@ -66,7 +66,7 @@ export default function Hero() {
             variants={item}
             className=" px-2 py-1 border border-black 
               rounded-lg text-sm font-inter
-              mx-auto md:mx-0"
+              mx-auto lg:mx-0"
           >
             Dear Stranger
           </motion.button>
@@ -85,9 +85,13 @@ export default function Hero() {
           <motion.div
             variants={item}
             className="flex flex-col sm:flex-row 
-              gap-4 pt-2 font-inter
-              justify-center md:justify-start px-20 md:px-0 text-sm w-fit"
+    gap-4 pt-2 font-inter
+    justify-center items-center lg:justify-start 
+    mx-auto sm:mx-0 
+    px-0 sm:px-20 md:px-0 
+    text-sm"
           >
+
             <a
               href="mailto:shisodesaurabh48@gmail.com"
               className="
@@ -133,9 +137,10 @@ export default function Hero() {
             alt="Cartoon"
             className="
     relative top-0 scale-115
-    w-[500px] md:w-64 lg:w-140 
+    w-[500px] md:w-124 lg:w-140 
     drop-shadow-xl
-    md:scale-100 md:top-0 md:right-20
+    md:translate-y-12 lg:translate-y-0
+    lg:scale-100 lg:top-0 lg:right-20
   "
           />
 
