@@ -64,7 +64,7 @@ export default function ExtraCurricular() {
       -translate-x-10 group-hover:opacity-100 group-hover:translate-x-2
       transition-all duration-500 ease-out font-inter text-left"
                             >
-                                Mail me your Valorant ID or take mine - 
+                                Mail me your Valorant ID.
                             </p>
                         </div>
                     </div>
