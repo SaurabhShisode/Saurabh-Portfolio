@@ -29,7 +29,7 @@ export default function App() {
   }, [])
 
   return (
-    <div className="bg-[#0d1117] p-0 m-0">
+    <div className="bg-[#0d1117] dark m-0 p-0">
       <Navbar />
       <Hero />
       <About />
@@ -47,7 +47,7 @@ export default function App() {
         <a
           href="/Saurabh Shisode Resume.pdf"
           download
-          className={`bg-red-500 fixed bottom-10 right-0 bg-gr ay-400 text-black px-4 py-2 rounded-l-lg flex items-center gap-2 font-medium text-sm shadow-lg transition-all duration-500 ${
+          className={`fixed bottom-10 right-0 bg-gray-400 text-black px-4 py-2 rounded-l-lg flex items-center gap-2 font-medium text-sm shadow-lg transition-all duration-500 ${
             scrolled
               ? "translate-x-0 opacity-100"
               : "translate-x-full opacity-0 pointer-events-none"
